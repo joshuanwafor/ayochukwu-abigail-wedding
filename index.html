@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="The wedding of Ayochukwu and Abigail, 20th November 2026, Jos: our love story, order of service, hymns, order of photographs and order of reception.">
+<meta property="og:title" content="Ayochukwu &amp; Abigail">
+<meta property="og:description" content="20th November 2026, Jos. Our love story, order of service, hymns and order of reception.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%231B2466'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='22' fill='%23F0BE55'%3E%26%3C/text%3E%3C/svg%3E">
+<title>Ayochukwu &amp; Abigail</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Jost:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Layout: a wedding programme held in the hand. Daytime sections sit on pale porcelain, the
+   reception on indigo cloth. Wide screens pin each title in a side column; phones get one column.
+   Palette: change the values below to match the wedding colours. */
+:root {
+  --paper: #F3F4F9;
+  --surface: #E6E9F4;
+  --ink: #171A3F;
+  --muted: #555A82;
+  --accent: #8C5A00;
+  --stitch: #C2901F;
+  --band: #1B2466;
+  --band-fg: #F6F3EA;
+  --band-muted: #BCC3EA;
+  --band-accent: #F0BE55;
+  --band-stitch: #8F7BA8;
+  --resist: #B8C3F2;
+  --thread-rose: #C8385A;
+
+  --display: "Baskervville", "Baskerville", "Libre Baskerville", Georgia, serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --label: "Jost", "Century Gothic", "Trebuchet MS", sans-serif;
+
+  --gutter-l: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  --bar: 3.25rem;
+  --adire: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M0 1H160M0 81H160M1 0V160M81 0V160'/%3E%3Ccircle cx='41' cy='41' r='28'/%3E%3Ccircle cx='41' cy='41' r='18'/%3E%3Ccircle cx='41' cy='41' r='8'/%3E%3Cpath d='M81 1l80 80M161 1l-80 80M121 1v80M81 41h80'/%3E%3Cpath d='M1 101l20-20 20 20 20-20 20 20M1 121l20-20 20 20 20-20 20 20M1 141l20-20 20 20 20-20 20 20M1 161l20-20 20 20 20-20 20 20'/%3E%3Cpath d='M97 97H161M97 113H161M97 129H161M97 145H161' stroke-dasharray='0 16' stroke-width='6'/%3E%3C/svg%3E");
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0E1130;
+    --surface: #171B45;
+    --ink: #E8E9F5;
+    --muted: #A9AED4;
+    --accent: #EDBE5A;
+    --stitch: #A9852F;
+    --band: #1B2466;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0E1130;
+  --surface: #171B45;
+  --ink: #E8E9F5;
+  --muted: #A9AED4;
+  --accent: #EDBE5A;
+  --stitch: #A9852F;
+  --band: #1B2466;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  height: env(safe-area-inset-top, 0px);
+  z-index: 10;
+  background: var(--paper);
+}
+h1, h2, h3, p, ol, ul, dl, dd { margin: 0; padding: 0; }
+ol, ul { list-style: none; }
+h1, h2 { font-family: var(--display); font-weight: 400; text-wrap: balance; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.eyebrow, .tabs a, .panel h3, .hymn-no, .sign-love, .size-label {
+  font-family: var(--label);
+  font-weight: 500;
+  font-size: .8125rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+/* Colour scope for the indigo cloth areas: everything inside reuses the same tokens. */
+.band {
+  --sec-bg: var(--band);
+  --ink: var(--band-fg);
+  --muted: var(--band-muted);
+  --accent: var(--band-accent);
+  --stitch: var(--band-stitch);
+  background: var(--band);
+  color: var(--ink);
+}
+.cloth { position: relative; isolation: isolate; overflow: hidden; }
+.cloth::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: var(--resist);
+  opacity: .14;
+  -webkit-mask: var(--adire) 0 0 / 160px 160px;
+  mask: var(--adire) 0 0 / 160px 160px;
+}
+.cloth::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(100deg, var(--band) 25%, transparent 90%);
+}
+
+/* Woven strip */
+.weave {
+  height: 22px;
+  background:
+    repeating-linear-gradient(90deg, var(--band-accent) 0 12px, transparent 12px 24px) 0 5px / 100% 5px no-repeat,
+    repeating-linear-gradient(90deg, transparent 0 12px, var(--thread-rose) 12px 24px) 0 12px / 100% 5px no-repeat,
+    linear-gradient(var(--band-accent) 0 0) 0 0 / 100% 2px no-repeat,
+    linear-gradient(var(--band-accent) 0 0) 0 100% / 100% 2px no-repeat,
+    var(--band-fg);
+}
+
+/* Hero */
+.hero-inner, .sec-inner, .tabs-row, .foot-inner {
+  max-width: 70rem;
+  margin-inline: auto;
+  padding-left: var(--gutter-l);
+  padding-right: var(--gutter-r);
+}
+.hero-inner { display: grid; gap: 1.5rem; padding-block: clamp(3.25rem, 11vw, 7.5rem); }
+.hero .eyebrow { color: var(--accent); }
+h1 { font-size: clamp(3.25rem, 17vw, 9.5rem); line-height: .98; letter-spacing: -.012em; text-wrap: initial; }
+h1 span { display: block; }
+h1 i { color: var(--accent); padding-right: .08em; }
+.hero-quote { font-family: var(--display); font-style: italic; font-size: clamp(1.25rem, 3.6vw, 1.75rem); line-height: 1.35; max-width: 30rem; color: var(--muted); }
+.details { display: flex; flex-wrap: wrap; gap: 1rem 3rem; }
+.details dt { font-family: var(--label); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.details dd { font-size: clamp(1.25rem, 3.4vw, 1.5rem); line-height: 1.3; }
+.live-btn, .live-tab { display: inline-flex; align-items: center; gap: .55em; font-family: var(--label); font-weight: 600; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; border-radius: 999px; }
+.live-btn { justify-self: start; padding: .8rem 1.4rem; font-size: .875rem; background: var(--band-accent); color: var(--band); }
+.live-btn:hover { background: var(--band-fg); }
+.live-dot { width: .6em; height: .6em; border-radius: 50%; background: var(--thread-rose); }
+.live-soon { font-family: var(--label); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+
+/* Sticky section bar */
+.tabs { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--paper); border-bottom: 1px solid var(--surface); }
+.tabs-row { display: flex; align-items: center; gap: .75rem; height: var(--bar); }
+.tabs-inner { flex: 1; min-width: 0; display: flex; align-items: center; gap: 1.5rem; height: 100%; overflow-x: auto; scrollbar-width: none; }
+.tabs-inner::-webkit-scrollbar { display: none; }
+.tabs a { flex: none; text-decoration: none; color: var(--muted); font-size: .75rem; padding-block: .75rem; border-bottom: 2px solid transparent; }
+.tabs a[aria-current="true"] { color: var(--ink); border-bottom-color: var(--stitch); }
+.tabs a:hover { color: var(--ink); }
+.tabs .mono { font-family: var(--display); font-style: italic; font-size: 1.3rem; letter-spacing: 0; text-transform: none; color: var(--ink); padding: 0 .5rem 0 0; border: 0; }
+.tabs a.live-tab, .tabs a.live-tab:hover { padding: .5rem .85rem; font-size: .6875rem; border: 0; background: var(--ink); color: var(--paper); }
+
+/* Sections */
+.sec { --sec-bg: var(--paper); background: var(--sec-bg); }
+.sec.tint { --sec-bg: var(--surface); }
+.sec.band { --sec-bg: var(--band); }
+[id] { scroll-margin-top: calc(var(--bar) + env(safe-area-inset-top, 0px) + 1rem); }
+.sec-inner { display: grid; gap: 2rem; padding-block: clamp(3.25rem, 8vw, 6.5rem); }
+.sec-head { display: grid; gap: .5rem; align-content: start; }
+.sec-head h2 { font-size: clamp(2.25rem, 7vw, 3rem); line-height: 1.08; }
+.sec-note { color: var(--muted); font-style: italic; }
+.sec-body { min-width: 0; display: grid; gap: 2.5rem; }
+@media (min-width: 860px) {
+  .sec-inner { grid-template-columns: minmax(0, 17rem) minmax(0, 1fr); gap: 4.5rem; }
+  .sec-head { position: sticky; top: calc(var(--bar) + 2.5rem); align-self: start; }
+}
+
+/* Story */
+.prose { display: grid; gap: 1.15rem; max-width: 38rem; font-size: 1.125rem; line-height: 1.72; }
+.prose > p:first-child::first-letter { font-family: var(--display); font-size: 4.3em; float: left; line-height: .82; padding: .06em .08em 0 0; color: var(--accent); }
+.turn { font-family: var(--display); font-style: italic; font-size: clamp(1.75rem, 5.4vw, 2.4rem); line-height: 1.2; color: var(--accent); text-wrap: balance; margin-block: 1.25rem; }
+.speech { font-style: italic; padding-left: 1.25rem; border-left: 2px dashed var(--stitch); }
+
+/* Numbered running order: the stitch joins each step to the next */
+.run { counter-reset: step; max-width: 38rem; }
+.run li { counter-increment: step; position: relative; padding: .28rem 0 1.5rem 3.4rem; break-inside: avoid; }
+.run li::before {
+  content: counter(step);
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1.5px solid var(--stitch);
+  background: var(--sec-bg);
+  color: var(--accent);
+  font-family: var(--label);
+  font-size: .8125rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.run li::after { content: ""; position: absolute; left: calc(1.125rem - 1px); top: 0; bottom: 0; border-left: 2px dashed var(--stitch); }
+.run li:last-child::after { display: none; }
+.what { display: block; font-size: 1.1875rem; line-height: 1.35; }
+.who { display: block; color: var(--muted); font-size: 1rem; font-style: italic; }
+.run a.what { text-decoration-color: var(--stitch); text-underline-offset: .2em; text-decoration-thickness: 1px; }
+.run .key .what { font-family: var(--display); font-style: italic; font-size: 1.75rem; line-height: 1.15; color: var(--accent); }
+.run .key::before { background: var(--accent); border-color: var(--accent); color: var(--sec-bg); }
+
+.panel { background: var(--paper); border-radius: 3px; padding: clamp(1.25rem, 4vw, 2rem); display: grid; gap: .9rem; max-width: 38rem; }
+.panel h3 { color: var(--accent); }
+.panel ul { display: grid; gap: .2rem; font-family: var(--display); font-size: 1.3125rem; line-height: 1.4; }
+
+/* Hymns */
+.hymns { --hymn: 1.125rem; }
+.hymns[data-size="2"] { --hymn: 1.375rem; }
+.hymns[data-size="3"] { --hymn: 1.625rem; }
+.sizes { display: flex; align-items: center; gap: .35rem; margin-top: .75rem; flex-wrap: wrap; }
+.size-label { font-size: .6875rem; color: var(--muted); margin-right: .35rem; }
+.sizes button { width: 2.5rem; height: 2.5rem; border-radius: 50%; border: 1.5px solid var(--stitch); background: transparent; color: var(--ink); font-family: var(--display); line-height: 1; cursor: pointer; }
+.sizes button:nth-of-type(1) { font-size: .9375rem; }
+.sizes button:nth-of-type(2) { font-size: 1.1875rem; }
+.sizes button:nth-of-type(3) { font-size: 1.4375rem; }
+.sizes button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.hymn { display: grid; gap: .35rem; max-width: 38rem; }
+.hymn-no { color: var(--accent); }
+.hymn h3 { font-family: var(--display); font-weight: 400; font-style: italic; font-size: clamp(1.75rem, 5.4vw, 2.25rem); line-height: 1.15; text-wrap: balance; }
+.lyrics { margin-top: 1rem; white-space: pre-line; font-size: var(--hymn); line-height: 1.6; }
+.lyrics:empty::before { content: "Words to be added."; color: var(--muted); font-style: italic; }
+.verses { counter-reset: verse; display: grid; gap: 1.4rem; margin-top: 1rem; font-size: var(--hymn); line-height: 1.5; }
+.verses li { counter-increment: verse; position: relative; padding-left: 2rem; }
+.verses li::before { content: counter(verse); position: absolute; left: 0; top: .28em; font-family: var(--label); font-size: .8125rem; font-weight: 500; color: var(--accent); font-variant-numeric: tabular-nums; }
+
+/* Photographs: a contact sheet */
+.frames { counter-reset: frame; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .625rem; }
+.frames li { counter-increment: frame; background: var(--paper); border-radius: 3px; padding: .75rem .875rem 1rem; display: grid; gap: .35rem; align-content: start; line-height: 1.3; }
+.frames li::before { content: counter(frame); font-family: var(--label); font-size: .75rem; font-weight: 500; letter-spacing: .08em; color: var(--accent); font-variant-numeric: tabular-nums; }
+
+/* Reception */
+.run.long { max-width: none; }
+.run .party .what { font-family: var(--display); font-style: italic; font-size: clamp(2.5rem, 8vw, 3.25rem); line-height: 1; color: var(--accent); }
+.run .party { padding-top: 0; padding-bottom: 0; }
+@media (min-width: 1020px) {
+  .run.long { columns: 2; column-gap: 3rem; }
+}
+
+/* Thank you */
+.thanks-lines { display: grid; gap: .15rem; font-family: var(--display); font-size: clamp(1.45rem, 4.4vw, 1.875rem); line-height: 1.25; margin-block: 1rem; }
+.sign { display: grid; gap: .35rem; margin-top: .75rem; }
+.sign-love { color: var(--muted); }
+.sign-names { font-family: var(--display); font-style: italic; font-size: clamp(1.875rem, 6vw, 2.5rem); line-height: 1.15; color: var(--accent); }
+
+/* Footer */
+.foot-inner { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-block: 2.25rem; }
+.foot-mono { font-family: var(--display); font-style: italic; font-size: 2.25rem; line-height: 1; }
+.foot-mono i { color: var(--accent); }
+.foot-top { font-family: var(--label); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); text-decoration: none; }
+.foot-top:hover { color: var(--ink); }
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+  .hero.cloth::before { animation: dye 1.8s ease-out both; }
+  @keyframes dye { from { opacity: .04; } to { opacity: .14; } }
+}
+</style>
+
+<header class="hero band cloth" id="top">
+  <div class="hero-inner">
+    <p class="eyebrow">The wedding of</p>
+    <h1><span>Ayochukwu</span> <span><i>&amp;</i>Abigail</span></h1>
+    <p class="hero-quote">“Every love story is beautiful, but ours is our favourite.”</p>
+
+    <dl class="details">
+      <div><dt>Date</dt><dd>20th November 2026</dd></div>
+      <div><dt>Location</dt><dd>Jos</dd></div>
+    </dl>
+    <a class="live-btn" data-live href="#top" target="_blank" rel="noopener" hidden><span class="live-dot" aria-hidden="true"></span>Watch live</a>
+    <p class="live-soon" id="live-soon">Live stream link coming soon</p>
+  </div>
+</header>
+<div class="weave" aria-hidden="true"></div>
+
+<nav class="tabs" aria-label="Sections">
+  <div class="tabs-row">
+  <div class="tabs-inner" id="tabs">
+    <a class="mono" href="#top" aria-label="Back to top">A&amp;A</a>
+    <a href="#story">Our Story</a>
+    <a href="#service">Service</a>
+    <a href="#hymns">Hymns</a>
+    <a href="#photographs">Photographs</a>
+    <a href="#reception">Reception</a>
+    <a href="#thanks">Thank You</a>
+  </div>
+  <a class="live-tab" data-live href="#top" target="_blank" rel="noopener" hidden><span class="live-dot" aria-hidden="true"></span>Live</a>
+  </div>
+</nav>
+
+<main>
+  <section class="sec" id="story">
+    <div class="sec-inner">
+      <header class="sec-head">
+        <h2>Our Love Story</h2>
+        <p class="sec-note">As told by Ayochukwu</p>
+      </header>
+      <div class="sec-body prose">
+        <p>Ours didn’t begin with a grand moment or a perfect plan. It began simply by meeting Solomon and Francis, who, over time, brought me into their family. I became a very good friend of the family, and before long, their home became a home away from home for me.</p>
+        <p>Days turned into months, and months into years. Through friendship, faith, laughter and unwavering support, our bond kept growing stronger. I was simply enjoying the friendship, until somewhere along the journey, Abigail and I became close friends.</p>
+        <p>We became woven into each other’s everyday lives. We laughed, had long gist-filled calls, shared the details of our days, our challenges, our laughter, our dreams and everything in between.</p>
+        <p>Over time, we became each other’s safe place, offering support, wisdom, presence and consistency through both the big moments and the ordinary ones.</p>
+        <p>What started as friendship slowly grew into a deeper connection. We talked, understood each other, got to know each other more, and somewhere along the way, we discovered something beautiful in one another.</p>
+        <p class="turn">Friendship had quietly become love.</p>
+        <p>And when that realization came, I knew I had to tell her family. Honestly, that was one of my biggest challenges.</p>
+        <p>I had so many thoughts and fears. How do I tell my friends, “O boy, I like your sister ooo, and I want to have a relationship with her”?</p>
+        <p class="speech">“Ah! You want to break BRO CODE?”</p>
+        <p class="speech">Or, “Mummy, I like your daughter.” Hmmmmm.</p>
+        <p>I didn’t want to lose the beautiful friendship and relationship I had built with the family in the process. I had so much love and respect for them, and the thought of anything changing because of my intentions was a genuine fear.</p>
+        <p>But eventually, I summoned the courage and spoke to the family about my intentions.</p>
+        <p>And surprisingly, they accepted me with open hearts and gave me their blessings. In fact, they were happy.</p>
+        <p>From there, everything began to fall into place.</p>
+        <p class="turn">The journey began.</p>
+        <p>Abigail became more than someone I loved. She became someone I could see myself doing life with, someone whose presence brought a different kind of peace, purpose and joy.</p>
+        <p>Our journey hasn’t been without its challenges, but every season has taught us something about love, patience, forgiveness, faith and, most importantly, choosing each other.</p>
+        <p>And perhaps the most beautiful part of our story is knowing that this isn’t the end of it. It is only the beginning of a new chapter.</p>
+        <p>A meeting was held. Questions were asked. Families were visited. Traditions were honoured. There was a proposal, a joyful send-forth, the dowry rites, and now, here we are.</p>
+        <p>From two people who found each other, to two families becoming one, this is the beautiful journey that has brought us here today.</p>
+        <p class="turn">This is our story and by God’s grace, the best chapters are still ahead.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tint" id="service">
+    <div class="sec-inner">
+      <header class="sec-head">
+        <h2>Order of Service</h2>
+      </header>
+      <div class="sec-body">
+        <ol class="run">
+          <li><span class="what">Interlude (Worship)</span></li>
+          <li><span class="what">Opening Prayer</span></li>
+          <li><span class="what">Bridal Processional</span></li>
+          <li><span class="what">Welcome of Guests</span><span class="who">Reason why we are here</span></li>
+          <li><span class="what">Special Ministration</span></li>
+          <li><span class="what">Poem Presentation</span><span class="who">Dr. Hassan (Jets)</span></li>
+          <li><a class="what" href="#hymn-1">Hymn</a><span class="who">Jesus, You’re Beautiful</span></li>
+          <li class="key"><span class="what">Marriage Solemnization</span></li>
+          <li><span class="what">Signing of Marriage Register</span></li>
+          <li><span class="what">Presentation of the New Couple</span><span class="who">Certificate/gifts (Bible)</span></li>
+          <li><span class="what">Closing Prayer / Announcements</span></li>
+          <li><a class="what" href="#hymn-2">Recessional Hymn</a><span class="who">Praise to the Lord, the Almighty</span></li>
+        </ol>
+        <div class="panel">
+          <h3>Officiating Ministers</h3>
+          <ul>
+            <li>Ven. Prof. Ishmael Ogboru</li>
+            <li>Prof. Likita Ogba</li>
+            <li>Dr. Lucius Imoh</li>
+            <li>Prof. Timothy Oyetunde</li>
+            <li>Rev. Ishaku Yaro</li>
+            <li>Rev. Niven Y. Mshelia</li>
+            <li>Rev. Ayuba Vandi</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec hymns" id="hymns">
+    <div class="sec-inner">
+      <header class="sec-head">
+        <h2>Hymns</h2>
+        <div class="sizes" role="group" aria-label="Hymn text size">
+          <span class="size-label">Text size</span>
+          <button type="button" id="size-1" data-size="1" aria-label="Normal text" aria-pressed="true">A</button>
+          <button type="button" id="size-2" data-size="2" aria-label="Large text" aria-pressed="false">A</button>
+          <button type="button" id="size-3" data-size="3" aria-label="Largest text" aria-pressed="false">A</button>
+        </div>
+      </header>
+      <div class="sec-body">
+        <article class="hymn" id="hymn-1">
+          <p class="hymn-no">Hymn 1</p>
+          <h3>Jesus, You’re Beautiful</h3>
+          <!-- HYMN 1 LYRICS: paste the words between the two tags on the next line. Line breaks are kept. -->
+          <div class="lyrics" id="hymn-1-lyrics"></div>
+        </article>
+        <article class="hymn" id="hymn-2">
+          <p class="hymn-no">Hymn 2</p>
+          <h3>Praise to the Lord, the Almighty</h3>
+          <ol class="verses">
+            <li>Praise to the Lord, the Almighty,<br>the King of creation!<br>O my soul, praise Him, for He is thy<br>health and salvation!<br>All ye who hear,<br>Now to His temple draw near;<br>Sing now in glad adoration!</li>
+            <li>Praise to the Lord, who o’er all<br>things so wondrously reigneth,<br>Who, as on wings of an eagle,<br>uplifteth, sustaineth.<br>Hast thou not seen<br>How thy desires all have been<br>Granted in what He ordaineth?</li>
+            <li>Praise to the Lord, who hath fearfully,<br>wondrously, made thee!<br>Health hath vouchsafed and, when<br>heedlessly falling, hath stayed thee.<br>What need or grief<br>Ever hath failed of relief?<br>Wings of His mercy did shade thee.</li>
+            <li>Praise to the Lord, who doth prosper<br>thy work and defend thee,<br>Who from the heavens the streams of<br>His mercy doth send thee.<br>Ponder anew<br>What the Almighty can do,<br>Who with His love doth befriend thee.</li>
+            <li>Praise to the Lord! Oh, let all that<br>is in me adore Him!<br>All that hath life and breath, come<br>now with praises before Him!<br>Let the Amen<br>Sound from His people again;<br>Gladly for aye we adore Him.</li>
+          </ol>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tint" id="photographs">
+    <div class="sec-inner">
+      <header class="sec-head">
+        <h2>Order of Photographs</h2>
+      </header>
+      <div class="sec-body">
+        <ol class="frames">
+          <li>Couple with officiating ministers</li>
+          <li>Couple only</li>
+          <li>Couple with both parents</li>
+          <li>Groom’s parents</li>
+          <li>Bride’s parents</li>
+          <li>Groom’s siblings</li>
+          <li>Bride’s siblings</li>
+          <li>Groom’s family</li>
+          <li>Bride’s family</li>
+          <li>Special Guest of Honour</li>
+          <li>Friends</li>
+          <li>Groom’s colleagues</li>
+          <li>Bride’s colleagues</li>
+          <li>Well-wishers</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <div class="weave" aria-hidden="true"></div>
+  <section class="sec band cloth" id="reception">
+    <div class="sec-inner">
+      <header class="sec-head">
+        <h2>Order of Reception</h2>
+      </header>
+      <div class="sec-body">
+        <ol class="run long">
+          <li><span class="what">Arrival of guests</span></li>
+          <li><span class="what">Introduction of dignitaries</span></li>
+          <li><span class="what">Parents entrance</span></li>
+          <li><span class="what">Bridal train and Groomsmen</span></li>
+          <li><span class="what">Couple entrance</span></li>
+          <li><span class="what">Opening prayer</span></li>
+          <li><span class="what">Chairman’s opening remark</span></li>
+          <li><span class="what">Couple’s first dance</span></li>
+          <li><span class="what">Cutting of cake</span></li>
+          <li><span class="what">Toast</span></li>
+          <li><span class="what">Couple dance with parents</span></li>
+          <li><span class="what">Groom’s family dance</span></li>
+          <li><span class="what">Bride’s family dance</span></li>
+          <li><span class="what">Presentation of gifts</span></li>
+          <li><span class="what">Closing remarks</span></li>
+          <li><span class="what">Vote of thanks</span></li>
+          <li><span class="what">Closing prayer</span></li>
+          <li class="party"><span class="what">Party</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <div class="weave" aria-hidden="true"></div>
+
+  <section class="sec" id="thanks">
+    <div class="sec-inner">
+      <header class="sec-head">
+        <h2>With Grateful Hearts, a Note of Gratitude!</h2>
+      </header>
+      <div class="sec-body prose">
+        <p>When we think of this journey and the many people God has used to bless, support, and encourage us, one word comes to mind: gratitude.</p>
+        <p>We are deeply thankful for the love that has surrounded us, the prayers that have upheld us, and the kindness that has met us at every stage of this journey. Sharing this day with you means more to us than we can fully express.</p>
+        <p>To our parents and families, thank you for loving us, guiding us, praying for us, and standing with us so faithfully. To our friends, mentors, and loved ones, thank you for your encouragement, your generosity, and the many ways you have shown up for us.</p>
+        <p>Every call, every message, every prayer, every gift, and every act of support has been a reminder to us that we are deeply loved, and for that, we are sincerely grateful.</p>
+        <p>As we step into married life, we do so carrying the love, lessons, and blessings of the incredible people God has placed around us. We pray that the same joy you have shared with us today will return to you in abundance in Jesus name.</p>
+        <div class="thanks-lines">
+          <p>Thank you for being here.</p>
+          <p>Thank you for being part of this moment.</p>
+          <p>Thank you for being part of our journey.</p>
+        </div>
+        <div class="sign">
+          <p class="sign-love">With all our love</p>
+          <p class="sign-names">Ayochukwu &amp; Abigail Osoba</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="band">
+  <div class="foot-inner">
+    <span class="foot-mono" aria-hidden="true">A<i>&amp;</i>A</span>
+    <a class="foot-top" href="#top">Back to top</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // WATCH LIVE: put the stream link between the quotes. The buttons appear once it is set.
+  var LIVE_URL = '';
+  if (LIVE_URL) {
+    document.querySelectorAll('[data-live]').forEach(function (a) {
+      a.href = LIVE_URL;
+      a.hidden = false;
+    });
+    document.getElementById('live-soon').hidden = true;
+  }
+
+  // Highlight the section being read, and keep its tab visible on narrow screens.
+  var bar = document.getElementById('tabs');
+  var links = Array.prototype.slice.call(bar.querySelectorAll('a:not(.mono)'));
+  function setCurrent(link) {
+    links.forEach(function (a) { a.removeAttribute('aria-current'); });
+    bar.scrollTo({ left: link ? link.offsetLeft - bar.offsetLeft - 16 : 0, behavior: 'smooth' });
+    if (link) link.setAttribute('aria-current', 'true');
+  }
+  if ('IntersectionObserver' in window) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        setCurrent(links.filter(function (a) {
+          return a.getAttribute('href') === '#' + entry.target.id;
+        })[0]);
+      });
+    }, { rootMargin: '-35% 0px -60% 0px' });
+    links.forEach(function (a) {
+      spy.observe(document.querySelector(a.getAttribute('href')));
+    });
+    spy.observe(document.getElementById('top'));
+  }
+
+  // Hymn text size, remembered on this device.
+  var hymns = document.getElementById('hymns');
+  var buttons = Array.prototype.slice.call(hymns.querySelectorAll('.sizes button'));
+  function setSize(size) {
+    hymns.dataset.size = size;
+    buttons.forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.size === size));
+    });
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      setSize(b.dataset.size);
+      try { localStorage.setItem('hymn-size', b.dataset.size); } catch (e) {}
+    });
+  });
+  try {
+    var saved = localStorage.getItem('hymn-size');
+    if (saved) setSize(saved);
+  } catch (e) {}
+})();
+</script>
