@@ -356,7 +356,7 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--accent); outlin
 .run a.what { text-decoration-color: var(--line); text-underline-offset: .25em; text-decoration-thickness: 1px; }
 .run a.what:hover { text-decoration-color: var(--ink); }
 .run .key .what { font-family: var(--display); font-style: italic; font-size: 1.375rem; }
-.run .party .what { font-family: var(--script); font-size: 2.5rem; line-height: 1; color: var(--accent); }
+.run .party .what { font-family: var(--script); font-size: clamp(1.875rem, 7vw, 2.25rem); line-height: 1.15; color: var(--accent); }
 .run.pairs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(1rem, 4vw, 2.5rem); max-width: none; }
 .run.pairs li { font-size: 1rem; line-height: 1.4; }
 .run.long { max-width: none; }
@@ -617,28 +617,29 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--accent); outlin
     <div class="sec-inner">
       <header class="sec-head">
         <h2>Order of Reception</h2>
-        <p class="sec-note">ECWA Headquarters Conference Hall</p>
+        <p class="sec-note">ECWA Headquarters Conference Hall<br>Duration: 3 hours 30 minutes maximum</p>
       </header>
       <div class="sec-body">
         <ol class="run long">
-          <li><span class="what">Arrival of guests</span></li>
-          <li><span class="what">Introduction of dignitaries</span></li>
-          <li><span class="what">Parents entrance</span></li>
-          <li><span class="what">Bridal train and Groomsmen</span></li>
-          <li><span class="what">Couple entrance</span></li>
-          <li><span class="what">Opening prayer</span></li>
-          <li><span class="what">Chairman’s opening remark</span></li>
-          <li><span class="what">Couple’s first dance</span></li>
-          <li><span class="what">Cutting of cake</span></li>
-          <li><span class="what">Toast</span></li>
-          <li><span class="what">Couple dance with parents</span></li>
-          <li><span class="what">Groom’s family dance</span></li>
-          <li><span class="what">Bride’s family dance</span></li>
-          <li><span class="what">Presentation of gifts</span></li>
-          <li><span class="what">Closing remarks</span></li>
-          <li><span class="what">Vote of thanks</span></li>
-          <li><span class="what">Closing prayer</span></li>
-          <li class="party"><span class="what">Party</span></li>
+          <li><span class="what">Arrival and Seating of Guests</span></li>
+          <li><span class="what">Introduction of Dignitaries</span></li>
+          <li><span class="what">Grand Entrance of Parents</span></li>
+          <li><span class="what">Entrance of Bridal Train and Groomsmen</span></li>
+          <li><span class="what">Grand Entrance of the Couple</span></li>
+          <li><span class="what">Opening Prayer</span></li>
+          <li><span class="what">Chairman’s Opening Remarks</span></li>
+          <li><span class="what">Couple’s First Dance</span></li>
+          <li><span class="what">Cake Cutting Ceremony</span></li>
+          <li><span class="what">Toast to the Couple</span></li>
+          <li><span class="what">Special Musical Performances</span><span class="who">Atela · Eazy · Fali Pona</span></li>
+          <li><span class="what">Couple’s Dance with Parents</span></li>
+          <li><span class="what">Groom’s Family Dance</span></li>
+          <li><span class="what">Bride’s Family Dance</span></li>
+          <li><span class="what">Presentation of Gifts</span></li>
+          <li><span class="what">Closing Remarks</span></li>
+          <li><span class="what">Vote of Thanks</span></li>
+          <li><span class="what">Closing Prayer</span></li>
+          <li class="party"><span class="what">Open Dance Floor / Party Time</span></li>
         </ol>
       </div>
     </div>
