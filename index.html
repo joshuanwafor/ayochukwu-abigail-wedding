@@ -387,6 +387,10 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--accent); outlin
 .verses { counter-reset: verse; display: grid; gap: 1.5rem; margin-top: 1rem; font-size: var(--hymn); line-height: 1.55; }
 .verses li { counter-increment: verse; position: relative; padding-left: 2rem; }
 .verses li::before { content: counter(verse); position: absolute; left: 0; top: .3em; font-family: var(--label); font-size: .75rem; color: var(--accent); font-variant-numeric: tabular-nums; }
+.verses .refrain { counter-increment: none; font-style: italic; }
+.verses .refrain::before { content: "Ref."; }
+.hymn-note { color: var(--muted); font-size: .9375rem; }
+.prose .word { font-family: var(--label); font-size: .875em; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
 
 /* Thank you */
 .thanks-lines { display: grid; gap: .2rem; font-family: var(--display); font-size: clamp(1.25rem, 4vw, 1.5rem); line-height: 1.35; margin-block: 1rem; }
@@ -527,16 +531,16 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--accent); outlin
         <ol class="run">
           <li><span class="what">Interlude (Worship)</span></li>
           <li><span class="what">Opening Prayer</span></li>
-          <li><span class="what">Bridal Processional</span></li>
+          <li><a class="what" href="#procession">Bridal Processional</a><span class="who">Jesus, You’re Beautiful</span></li>
           <li><span class="what">Welcome of Guests</span><span class="who">Reason why we are here</span></li>
           <li><span class="what">Special Ministration</span></li>
           <li><span class="what">Poem Presentation</span><span class="who">Dr. Hassan (Jets)</span></li>
-          <li><a class="what" href="#hymn-1">Hymn</a><span class="who">Jesus, You’re Beautiful</span></li>
+          <li><a class="what" href="#hymn-1">Hymn</a><span class="who">Praise to the Lord, the Almighty</span></li>
           <li class="key"><span class="what">Marriage Solemnization</span></li>
           <li><span class="what">Signing of Marriage Register</span></li>
           <li><span class="what">Presentation of the New Couple</span><span class="who">Certificate/gifts (Bible)</span></li>
           <li><span class="what">Closing Prayer / Announcements</span></li>
-          <li><a class="what" href="#hymn-2">Recessional Hymn</a><span class="who">Praise to the Lord, the Almighty</span></li>
+          <li><a class="what" href="#hymn-2">Recessional Hymn</a><span class="who">Count Your Blessings</span></li>
         </ol>
         <div class="ministers">
           <h3 class="label">Officiating Ministers</h3>
@@ -566,14 +570,14 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--accent); outlin
         </div>
       </header>
       <div class="sec-body">
+        <article class="hymn" id="procession">
+          <p class="label">Bridal Procession</p>
+          <h3>Jesus, You’re Beautiful</h3>
+          <!-- PROCESSION SONG WORDS: paste the words between the two tags on the next line. Line breaks are kept. -->
+          <div class="lyrics" id="procession-lyrics"></div>
+        </article>
         <article class="hymn" id="hymn-1">
           <p class="label">Hymn 1</p>
-          <h3>Jesus, You’re Beautiful</h3>
-          <!-- HYMN 1 LYRICS: paste the words between the two tags on the next line. Line breaks are kept. -->
-          <div class="lyrics" id="hymn-1-lyrics"></div>
-        </article>
-        <article class="hymn" id="hymn-2">
-          <p class="label">Hymn 2</p>
           <h3>Praise to the Lord, the Almighty</h3>
           <ol class="verses">
             <li>Praise to the Lord, the Almighty,<br>the King of creation!<br>O my soul, praise Him, for He is thy<br>health and salvation!<br>All ye who hear,<br>Now to His temple draw near;<br>Sing now in glad adoration!</li>
@@ -581,6 +585,18 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--accent); outlin
             <li>Praise to the Lord, who hath fearfully,<br>wondrously, made thee!<br>Health hath vouchsafed and, when<br>heedlessly falling, hath stayed thee.<br>What need or grief<br>Ever hath failed of relief?<br>Wings of His mercy did shade thee.</li>
             <li>Praise to the Lord, who doth prosper<br>thy work and defend thee,<br>Who from the heavens the streams of<br>His mercy doth send thee.<br>Ponder anew<br>What the Almighty can do,<br>Who with His love doth befriend thee.</li>
             <li>Praise to the Lord! Oh, let all that<br>is in me adore Him!<br>All that hath life and breath, come<br>now with praises before Him!<br>Let the Amen<br>Sound from His people again;<br>Gladly for aye we adore Him.</li>
+          </ol>
+        </article>
+        <article class="hymn" id="hymn-2">
+          <p class="label">Hymn 2</p>
+          <h3>Count Your Blessings</h3>
+          <p class="hymn-note">Sing the refrain after each verse.</p>
+          <ol class="verses">
+            <li>When upon life’s billows you are tempest tossed,<br>When you are discouraged, thinking all is lost,<br>Count your many blessings, name them one by one,<br>And it will surprise you what the Lord hath done.</li>
+            <li class="refrain">Count your blessings, name them one by one;<br>Count your blessings, see what God hath done;<br>Count your blessings, name them one by one,<br>And it will surprise you what the Lord hath done.</li>
+            <li>Are you ever burdened with a load of care?<br>Does the cross seem heavy you are called to bear?<br>Count your many blessings, every doubt will fly,<br>And you will be singing as the days go by.</li>
+            <li>When you look at others with their lands and gold,<br>Think that Christ has promised you His wealth untold.<br>Count your many blessings, money cannot buy<br>Your reward in heaven, nor your Lord on high.</li>
+            <li>So amid the conflict, whether great or small,<br>Do not be discouraged, God is over all;<br>Count your many blessings, angels will attend,<br>Help and comfort give you to your journey’s end.</li>
           </ol>
         </article>
       </div>
@@ -648,22 +664,20 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--accent); outlin
   <section class="sec" id="thanks">
     <div class="sec-inner">
       <header class="sec-head">
-        <h2>With Grateful Hearts, a Note of Gratitude!</h2>
+        <h2>With Grateful Hearts</h2>
       </header>
       <div class="sec-body prose">
-        <p>When we think of this journey and the many people God has used to bless, support, and encourage us, one word comes to mind: gratitude.</p>
+        <p>When we think of this journey and the many people God has used to bless, support, and encourage us, one word comes to mind: <span class="word">Gratitude</span>.</p>
         <p>We are deeply thankful for the love that has surrounded us, the prayers that have upheld us, and the kindness that has met us at every stage of this journey. Sharing this day with you means more to us than we can fully express.</p>
-        <p>To our parents and families, thank you for loving us, guiding us, praying for us, and standing with us so faithfully. To our friends, mentors, and loved ones, thank you for your encouragement, your generosity, and the many ways you have shown up for us.</p>
-        <p>Every call, every message, every prayer, every gift, and every act of support has been a reminder to us that we are deeply loved, and for that, we are sincerely grateful.</p>
+        <p>To our parents and families, thank you for loving, guiding, praying, and standing with us so faithfully. To our friends, mentors, and loved ones, thank you for your encouragement, your generosity, and the many ways you have shown up for us.</p>
+        <p>Every call, every message, every prayer, every gift, and every act of support has been a reminder to us that we are deeply loved, and for that, we appreciate you.</p>
         <p>As we step into married life, we do so carrying the love, lessons, and blessings of the incredible people God has placed around us. We pray that the same joy you have shared with us today will return to you in abundance in Jesus name.</p>
         <div class="thanks-lines">
-          <p>Thank you for being here.</p>
-          <p>Thank you for being part of this moment.</p>
-          <p>Thank you for being part of our journey.</p>
+          <p>Thank you for being here and sharing this moment of our journey with us.</p>
         </div>
         <div class="sign">
-          <p class="label">With all our love</p>
-          <p class="sign-names">Ayochukwu &amp; Abigail Osoba</p>
+          <p class="label">With love</p>
+          <p class="sign-names">Mr &amp; Mrs Ayochukwu</p>
         </div>
       </div>
     </div>
