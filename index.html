@@ -6,73 +6,94 @@
 <meta property="og:title" content="Atela Abigail &amp; Osoba Jerry">
 <meta property="og:description" content="Friday 20th November 2026 at 10:00 AM, The God-Life Assembly International, Jos. Reception to follow at ECWA Headquarters Conference Hall.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%234A3428'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='22' fill='%23F3CFC8'%3E%26%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%232E4A35'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='22' fill='%23F7F6F0'%3E%26%3C/text%3E%3C/svg%3E">
 <title>Abigail &amp; Jerry</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500&family=Pinyon+Script&display=swap">
 <style>
-/* Layout: an envelope opens on arrival and the invitation card rises out of it. Below it the
-   day reads as one quiet column of type on white, divided by hairlines, with sage green, blush
-   pink and coffee brown used sparingly. Wide screens pin each title in a side column. */
+/* Layout: photo-led, like a garden-wedding stationery suite. Full-bleed photographs of the couple
+   open the page and sit behind the two running orders; between them, ivory sections pair a framed
+   photo on a forest-green block with spaced serif capitals over a script title. */
 :root {
-  --paper: #FFFFFF;
-  --ink: #2B211B;
-  --muted: #7A6A60;
-  --line: #ECE5E0;
-  --accent: #5E7052;
-  --bar-bg: rgba(255, 255, 255, .86);
-  --lift: 0 40px 80px -48px rgba(74, 52, 40, .45);
+  --paper: #F7F6F0;
+  --paper-2: #EEEDE4;
+  --ink: #1E2920;
+  --muted: #5F6A5C;
+  --line: #D9DBCF;
+  --green: #2E4A35;
+  --accent: #2E4A35;
+  --on-green: #F7F6F0;
+  --bar-bg: rgba(247, 246, 240, .94);
+  --live: #D9564A;
 
-  /* The invitation card and envelope are physical objects, the same in both themes. */
-  --card: #FFFFFF;
-  --card-ink: #111111;
-  --card-line: #1A1A1A;
-  --card-soft: #6F6F6F;
-  --card-faint: #F1F1F1;
-  --card-date: #DADADA;
-  --intro-bg: #F6E9E5;
-  --env: #EBCFC7;
-  --env-flap: #E4C2B9;
-  --env-inside: #D6ADA2;
-  --env-shadow: rgba(74, 52, 40, .22);
-  --seal: #4A3428;
-  --seal-ink: #F3D9D2;
+  /* Over photographs: the same in both themes. */
+  --photo-ink: #F7F6F0;
+  --photo-soft: rgba(247, 246, 240, .8);
+  --photo-line: rgba(247, 246, 240, .45);
+  --photo-veil: rgba(16, 27, 19, .76);
+  --photo-veil-top: rgba(12, 20, 14, .6);
+  --photo-veil-mid: rgba(12, 20, 14, .16);
+  --photo-shadow: rgba(0, 0, 0, .28);
+  --photo-base: #1C2A20;
+
+  /* The envelope is a physical object, the same in both themes. */
+  --intro-bg: #F3F2EA;
+  --card: #FBFAF5;
+  --card-ink: #1E2920;
+  --card-line: #2E4A35;
+  --env: #2E4A35;
+  --env-flap: #375640;
+  --env-inside: #223828;
+  --env-shadow: rgba(20, 34, 24, .3);
+  --seal: #C6AE78;
+  --seal-ink: #223828;
+
   --swatch-sage: #9CAF88;
   --swatch-blush: #EFC8C2;
   --swatch-coffee: #5C4033;
+  --swatch-white: #FFFFFF;
+  --swatch-edge: rgba(30, 41, 32, .2);
 
-  --display: "Playfair Display", "Bodoni 72", Didot, Georgia, serif;
+  --display: "Cormorant Garamond", "Cormorant", Garamond, "Times New Roman", serif;
   --script: "Pinyon Script", "Snell Roundhand", "Apple Chancery", cursive;
-  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --label: "Jost", "Futura", "Century Gothic", "Trebuchet MS", sans-serif;
+  --body: "EB Garamond", Garamond, Georgia, serif;
+  --label: "Montserrat", "Helvetica Neue", Arial, sans-serif;
 
   --gutter-l: max(16px, env(safe-area-inset-left, 0px));
   --gutter-r: max(16px, env(safe-area-inset-right, 0px));
-  --bar: 3.25rem;
+  --bar: 3.5rem;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #141010;
-    --ink: #EFE7E1;
-    --muted: #A89A90;
-    --line: #2C2420;
-    --accent: #AEC09C;
-    --bar-bg: rgba(20, 16, 16, .86);
-    --lift: 0 40px 90px -40px rgba(0, 0, 0, .8);
-    --intro-bg: #1E1714;
+    --paper: #0F1410;
+    --paper-2: #151C16;
+    --ink: #E9EBE2;
+    --muted: #A2AC9C;
+    --line: #273026;
+    --green: #2B4632;
+    --accent: #A8C29F;
+    --on-green: #F1F2EA;
+    --bar-bg: rgba(15, 20, 16, .94);
+    --intro-bg: #0F1410;
+    --env-shadow: rgba(0, 0, 0, .55);
+    --swatch-edge: rgba(233, 235, 226, .3);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --paper: #141010;
-  --ink: #EFE7E1;
-  --muted: #A89A90;
-  --line: #2C2420;
-  --accent: #AEC09C;
-  --bar-bg: rgba(20, 16, 16, .86);
-  --lift: 0 40px 90px -40px rgba(0, 0, 0, .8);
-  --intro-bg: #1E1714;
+  --paper: #0F1410;
+  --paper-2: #151C16;
+  --ink: #E9EBE2;
+  --muted: #A2AC9C;
+  --line: #273026;
+  --green: #2B4632;
+  --accent: #A8C29F;
+  --on-green: #F1F2EA;
+  --bar-bg: rgba(15, 20, 16, .94);
+  --intro-bg: #0F1410;
+  --env-shadow: rgba(0, 0, 0, .55);
+  --swatch-edge: rgba(233, 235, 226, .3);
   color-scheme: dark;
 }
 
@@ -84,28 +105,22 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--body);
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   line-height: 1.7;
 }
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0 0 auto;
-  height: env(safe-area-inset-top, 0px);
-  z-index: 10;
-  background: var(--paper);
-}
-h1, h2, h3, p, ol, ul { margin: 0; padding: 0; }
+h1, h2, h3, p, ol, ul, dl, dd, figure { margin: 0; padding: 0; }
 ol, ul { list-style: none; }
-h2 { font-family: var(--display); font-weight: 400; text-wrap: balance; }
 a { color: inherit; }
-a:focus-visible, button:focus-visible { outline: 1px solid var(--accent); outline-offset: 4px; }
+img { display: block; max-width: 100%; }
+a:focus-visible, button:focus-visible { outline: 1px solid currentColor; outline-offset: 4px; }
+[id] { scroll-margin-top: calc(var(--bar) + env(safe-area-inset-top, 0px)); }
 
-.label, .tabs a, .size-label, .live-soon, .foot-top, .intro-skip {
+.caps, .tabs-group a, .live-tab, .live-btn, .intro-skip, .size-label {
   font-family: var(--label);
-  font-weight: 400;
+  font-weight: 500;
   font-size: .6875rem;
-  letter-spacing: .2em;
+  letter-spacing: .24em;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
@@ -152,10 +167,10 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--accent); outlin
   animation: card-rise 1s cubic-bezier(.2, .7, .2, 1) 1.65s both;
 }
 @keyframes card-rise { to { transform: translateY(-46%); } }
-.env-caps { font-family: var(--display); font-size: .5625rem; font-size: clamp(.5rem, 2.4cqi, .6875rem); letter-spacing: .22em; text-transform: uppercase; }
+.env-caps { font-family: var(--display); font-weight: 500; font-size: .625rem; font-size: clamp(.5625rem, 2.6cqi, .75rem); letter-spacing: .22em; text-transform: uppercase; }
 .env-names { font-family: var(--script); font-size: 1.75rem; font-size: clamp(1.5rem, 8.6cqi, 2.375rem); line-height: 1.05; }
 .env-names i { display: block; font-style: normal; font-size: .7em; }
-.env-date { font-family: var(--label); font-size: .625rem; font-size: clamp(.5625rem, 2.6cqi, .75rem); letter-spacing: .3em; }
+.env-date { font-family: var(--label); font-size: .5625rem; font-size: clamp(.5rem, 2.4cqi, .6875rem); letter-spacing: .3em; }
 .env-front {
   z-index: 3;
   background: var(--env);
@@ -210,199 +225,339 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--accent); outlin
   cursor: pointer;
 }
 
-/* Sticky section bar */
-.tabs-row, .hero-inner, .sec-inner, .foot-inner {
+/* Navigation: clear over the opening photo, then a solid ivory bar */
+.tabs {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 20;
+  padding-top: env(safe-area-inset-top, 0px);
+  color: var(--photo-ink);
+  transition: background-color .3s ease, color .3s ease, box-shadow .3s ease;
+}
+.tabs.is-solid {
+  background: var(--bar-bg);
+  color: var(--ink);
+  box-shadow: 0 1px 0 var(--line);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.tabs-row {
+  position: relative;
+  max-width: 76rem;
+  height: var(--bar);
+  margin-inline: auto;
+  padding-left: var(--gutter-l);
+  padding-right: var(--gutter-r);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.tabs-scroll {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.tabs-scroll::-webkit-scrollbar { display: none; }
+.tabs-group { flex: none; display: flex; align-items: center; gap: 1.5rem; }
+.tabs .mono { order: -1; flex: none; font-family: var(--script); font-size: 1.875rem; line-height: 1; text-decoration: none; }
+.tabs-group a { flex: none; padding-block: .35rem; text-decoration: none; border-bottom: 1px solid transparent; opacity: .8; }
+.tabs-group a:hover { opacity: 1; }
+.tabs-group a[aria-current="true"] { opacity: 1; border-bottom-color: currentColor; }
+.live-tab { flex: none; display: inline-flex; align-items: center; gap: .55em; padding: .45rem .9rem; border: 1px solid currentColor; border-radius: 999px; text-decoration: none; }
+.live-dot { width: .5em; height: .5em; border-radius: 50%; background: var(--live); }
+@media (min-width: 1200px) {
+  .tabs-scroll { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 2.5rem; overflow: visible; }
+  .tabs .mono { order: 0; font-size: 2.25rem; }
+  .tabs-group { gap: 2.25rem; }
+  .tabs-group:first-child { justify-content: flex-end; }
+  .live-tab { position: absolute; right: var(--gutter-r); }
+}
+
+/* Opening photograph */
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: grid;
+  min-height: 40rem;
+  min-height: min(90svh, 54rem);
+  background: var(--photo-base);
+  color: var(--photo-ink);
+}
+.hero-photo, .hero-photo img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero-photo { z-index: -2; }
+.hero-photo img { object-fit: cover; object-position: 50% 60%; }
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, var(--photo-veil-top) 0%, var(--photo-veil-mid) 52%, var(--photo-veil-top) 100%);
+}
+.hero-inner {
+  align-self: start;
+  display: grid;
+  justify-items: center;
+  gap: 1.1rem;
+  text-align: center;
+  padding-top: calc(var(--bar) + clamp(3.5rem, 12svh, 8rem));
+  padding-bottom: 3rem;
+  padding-left: var(--gutter-l);
+  padding-right: var(--gutter-r);
+  text-shadow: 0 2px 24px var(--photo-shadow);
+}
+.hero h1 { font-family: var(--script); font-weight: 400; font-size: clamp(3.75rem, 17vw, 7.5rem); line-height: .98; }
+.hero h1 span, .hero h1 i { display: block; }
+.hero h1 i { font-style: normal; font-size: .75em; line-height: 1.1; }
+.hero-foot { display: grid; justify-items: center; gap: 1.1rem; }
+@media (min-width: 720px) {
+  .hero h1 span, .hero h1 i { display: inline; }
+  .hero h1 i { font-size: .8em; }
+}
+/* Wide screens show the stairs photo: names above the couple, date at the foot of the photo. */
+@media (min-width: 900px) and (min-aspect-ratio: 5/4) {
+  .hero-photo img { object-position: 50% 0%; }
+  .hero-inner { align-self: stretch; padding-top: calc(var(--bar) + 1.25rem); padding-bottom: 2.75rem; grid-template-rows: auto auto auto 1fr; }
+  .hero h1 { font-size: clamp(4.5rem, 8vw, 6.5rem); }
+  .hero-foot { align-self: end; }
+}
+.hero-rule { width: min(13rem, 45vw); height: 1px; background: var(--photo-line); }
+.hero-date { letter-spacing: .36em; }
+.live-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .6em;
+  margin-top: .75rem;
+  padding: .85rem 1.6rem;
+  border: 1px solid var(--photo-ink);
+  border-radius: 999px;
+  color: var(--photo-ink);
+  text-decoration: none;
+  text-shadow: none;
+}
+.live-btn:hover { background: var(--photo-ink); color: var(--photo-base); }
+.live-soon { margin-top: .5rem; font-style: italic; color: var(--photo-soft); }
+
+/* Date */
+.dateband {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  text-align: center;
+  padding-block: clamp(3.5rem, 10vw, 6rem) 0;
+  padding-left: var(--gutter-l);
+  padding-right: var(--gutter-r);
+}
+.big-date {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(2.125rem, 8.4vw, 4.75rem);
+  line-height: 1.05;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  font-variant-numeric: lining-nums;
+  color: var(--accent);
+  text-wrap: balance;
+}
+.dateband .caps { color: var(--muted); letter-spacing: .32em; }
+
+/* Section titles: spaced capitals over a script name */
+.title { display: grid; justify-items: center; gap: .15rem; text-align: center; }
+.title-caps {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(1.0625rem, 3.6vw, 1.375rem);
+  line-height: 1.3;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-wrap: balance;
+}
+.title-script { font-family: var(--script); font-weight: 400; font-size: clamp(2.5rem, 9vw, 3.5rem); line-height: 1.15; text-wrap: balance; }
+.sec-note { font-style: italic; color: var(--muted); text-align: center; line-height: 1.5; text-wrap: balance; }
+
+/* Photo beside text */
+.split { padding-block: clamp(3.5rem, 10vw, 7rem); }
+.split-inner {
   max-width: 68rem;
   margin-inline: auto;
   padding-left: var(--gutter-l);
   padding-right: var(--gutter-r);
+  display: grid;
+  gap: clamp(3rem, 8vw, 5.5rem);
+  align-items: center;
 }
-.tabs {
-  position: sticky;
-  top: env(safe-area-inset-top, 0px);
-  z-index: 5;
-  background: var(--bar-bg);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--line);
+.split-inner > * { min-width: 0; }
+.split-text { display: grid; gap: 2rem; justify-items: center; }
+.framed { position: relative; isolation: isolate; justify-self: center; width: min(calc(100% - 1.5rem), 25rem); }
+.framed::before { content: ""; position: absolute; z-index: -1; top: 14%; bottom: 14%; left: -1.25rem; width: 46%; background: var(--green); }
+.framed.top-right::before { top: -1.25rem; bottom: auto; left: auto; right: -1.25rem; width: 58%; height: 44%; }
+.framed img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+@media (min-width: 860px) {
+  .split-inner { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); }
+  .split.flip .split-inner { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); }
+  .split.flip .framed { order: 2; }
+  .framed::before { left: -2rem; }
+  .framed.top-right::before { top: -2rem; right: -2rem; }
+  .split.long .split-inner { align-items: start; }
+  .split.long .framed { position: sticky; top: calc(var(--bar) + 3rem); }
 }
-.tabs-row { display: flex; align-items: center; gap: .75rem; height: var(--bar); }
-.tabs-inner { flex: 1; min-width: 0; display: flex; align-items: center; gap: 1.75rem; height: 100%; overflow-x: auto; scrollbar-width: none; }
-.tabs-inner::-webkit-scrollbar { display: none; }
-.tabs a { flex: none; text-decoration: none; color: var(--muted); padding-block: .5rem; border-bottom: 1px solid transparent; }
-.tabs a[aria-current="true"] { color: var(--ink); border-bottom-color: var(--ink); }
-.tabs a:hover { color: var(--ink); }
-.tabs .mono { font-family: var(--script); font-size: 1.625rem; line-height: 1; letter-spacing: 0; text-transform: none; color: var(--ink); padding: 0 .25rem 0 0; border: 0; }
-.tabs a.live-tab, .tabs a.live-tab:hover { padding: .45rem .9rem; border: 1px solid var(--ink); border-radius: 999px; color: var(--ink); }
 
-/* The invitation */
-.hero-inner { display: grid; justify-items: center; gap: 1.5rem; padding-block: clamp(2rem, 8vw, 5.5rem) clamp(3rem, 9vw, 6rem); }
-.invite {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  width: min(100%, 34rem);
-  background: var(--card);
-  color: var(--card-ink);
-  border: 1px solid var(--card-line);
-  box-shadow: inset 0 0 0 10px var(--card), inset 0 0 0 11px var(--card-line), var(--lift);
-  padding: clamp(3rem, 11vw, 4.5rem) clamp(1.25rem, 6vw, 3rem) clamp(2.75rem, 9vw, 4rem);
-  display: grid;
-  gap: clamp(1rem, 3.5vw, 1.5rem);
-  justify-items: center;
-  text-align: center;
-}
-.invite-stack {
-  position: absolute;
-  top: clamp(1.25rem, 4vw, 1.75rem);
-  right: clamp(1.25rem, 4vw, 1.75rem);
-  display: grid;
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: clamp(1.125rem, 5vw, 1.875rem);
-  font-variant-numeric: lining-nums;
-  line-height: 1;
-  color: var(--card-date);
-}
-.invite-caps { font-family: var(--display); font-size: clamp(.6875rem, 2.9vw, .875rem); letter-spacing: .24em; line-height: 1.7; text-transform: uppercase; }
-.invite-names { position: relative; display: grid; justify-items: center; width: 100%; }
-.invite-mono {
-  position: absolute;
-  z-index: -1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-family: var(--display);
-  font-size: clamp(8rem, 40vw, 13rem);
-  line-height: 1;
-  color: var(--card-faint);
-  white-space: nowrap;
-}
-.invite-mono span { margin-left: -.14em; }
-.invite h1 { font-family: var(--script); font-weight: 400; font-size: clamp(2.75rem, 12.4vw, 4.25rem); line-height: 1.08; }
-.invite h1 span { display: block; }
-.invite h1 i { display: block; font-style: normal; font-size: .7em; line-height: 1; }
-.invite-when { display: grid; grid-template-columns: repeat(3, auto); justify-content: center; font-family: var(--display); font-variant-numeric: lining-nums; line-height: 1.2; text-transform: uppercase; }
-.invite-when p { display: grid; gap: .15rem; align-content: center; padding-inline: clamp(.75rem, 3.4vw, 1.4rem); border-left: 1px solid var(--card-line); }
-.invite-when p:first-child { border-left: 0; }
-.invite-when span { font-size: clamp(.6875rem, 2.9vw, .8125rem); letter-spacing: .18em; }
-.invite-when b { font-weight: 400; font-size: clamp(1.125rem, 5vw, 1.5rem); white-space: nowrap; }
-.heart-rule { display: flex; align-items: center; gap: .6rem; width: min(70%, 14rem); }
-.heart-rule::before, .heart-rule::after { content: ""; flex: 1; height: 1px; background: var(--card-line); }
-.heart-rule svg { width: .625rem; height: .625rem; flex: none; }
-.invite-block { display: grid; gap: .2rem; justify-items: center; font-family: var(--display); line-height: 1.35; }
-.invite-venue { font-style: italic; font-size: clamp(1rem, 4.1vw, 1.25rem); text-wrap: balance; }
-.invite-address { font-size: clamp(.8125rem, 3.4vw, 1rem); color: var(--card-soft); }
-.invite-colour-label { font-style: italic; font-size: clamp(.9375rem, 3.8vw, 1.125rem); }
-.invite-colours { font-size: clamp(.8125rem, 3.4vw, 1rem); color: var(--card-soft); text-wrap: balance; }
-.swatches { display: flex; gap: .45rem; margin-top: .5rem; }
-.swatches li { width: .75rem; height: .75rem; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .12); }
+/* The invitation details */
+.lead { font-family: var(--display); font-style: italic; font-size: clamp(1.5rem, 5vw, 1.875rem); line-height: 1.3; text-align: center; text-wrap: balance; }
+.lead b { font-weight: 500; }
+.facts { display: grid; gap: 1.75rem; width: 100%; text-align: center; }
+.facts > div { display: grid; justify-items: center; gap: .3rem; padding-top: 1.75rem; border-top: 1px solid var(--line); }
+.facts dt { color: var(--accent); }
+.facts dd { line-height: 1.5; text-wrap: balance; }
+.facts .place { font-family: var(--display); font-style: italic; font-size: 1.375rem; line-height: 1.3; }
+.swatches { display: flex; gap: .5rem; margin-top: .4rem; }
+.swatches li { width: .875rem; height: .875rem; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--swatch-edge); }
 .swatches li:nth-child(1) { background: var(--swatch-sage); }
 .swatches li:nth-child(2) { background: var(--swatch-blush); }
 .swatches li:nth-child(3) { background: var(--swatch-coffee); }
-.swatches li:nth-child(4) { background: var(--card); }
-.invite-follow { font-family: var(--script); font-size: clamp(1.875rem, 7.6vw, 2.5rem); line-height: 1.1; }
-.invite-hall { font-size: clamp(.875rem, 3.5vw, 1.0625rem); }
-
-.live-btn, .live-tab { display: inline-flex; align-items: center; gap: .6em; text-decoration: none; }
-.live-btn { padding: .85rem 1.6rem; border: 1px solid var(--ink); border-radius: 999px; font-family: var(--label); font-size: .75rem; letter-spacing: .2em; text-transform: uppercase; color: var(--ink); }
-.live-btn:hover { background: var(--ink); color: var(--paper); }
-.live-dot { width: .5em; height: .5em; border-radius: 50%; background: var(--swatch-blush); }
-.live-soon { color: var(--muted); text-align: center; }
-
-/* Sections */
-[id] { scroll-margin-top: calc(var(--bar) + env(safe-area-inset-top, 0px) + 1rem); }
-.sec-inner { display: grid; gap: 2.25rem; padding-block: clamp(3.5rem, 9vw, 7rem); }
-.sec-head { display: grid; gap: .75rem; align-content: start; }
-.sec-head h2 { font-size: clamp(2rem, 6.4vw, 2.625rem); line-height: 1.12; }
-.sec-note { color: var(--muted); font-style: italic; font-size: 1rem; line-height: 1.5; }
-.sec-quote { font-family: var(--display); font-style: italic; font-size: 1.125rem; line-height: 1.45; color: var(--muted); text-wrap: balance; }
-.sec-body { min-width: 0; display: grid; gap: 3rem; }
-.sec + .sec .sec-inner { border-top: 1px solid var(--line); }
-.sec-inner > * { min-width: 0; }
-@media (min-width: 860px) {
-  .sec-inner { grid-template-columns: minmax(0, 16rem) minmax(0, 1fr); gap: 5rem; }
-  .sec-head { position: sticky; top: calc(var(--bar) + 2.5rem); align-self: start; }
-}
+.swatches li:nth-child(4) { background: var(--swatch-white); }
 
 /* Story */
-.prose { display: grid; gap: 1.2rem; max-width: 36rem; font-size: 1.125rem; line-height: 1.78; }
-.turn { font-family: var(--display); font-style: italic; font-size: clamp(1.375rem, 4.4vw, 1.75rem); line-height: 1.35; color: var(--accent); text-wrap: balance; margin-block: 1rem; }
-.speech { font-style: italic; padding-left: 1.25rem; color: var(--muted); }
+.quote { font-family: var(--display); font-style: italic; font-size: 1.375rem; line-height: 1.35; text-align: center; color: var(--muted); text-wrap: balance; }
+.prose { display: grid; gap: 1.2rem; max-width: 36rem; font-size: 1.1875rem; line-height: 1.75; }
+.turn { margin-block: .9rem; font-family: var(--display); font-style: italic; font-weight: 500; font-size: clamp(1.5rem, 5vw, 1.875rem); line-height: 1.3; color: var(--accent); text-align: center; text-wrap: balance; }
+.speech { padding-left: 1.25rem; font-style: italic; color: var(--muted); }
+.byline { color: var(--muted); }
 
-/* Numbered running orders */
-.run { counter-reset: step; max-width: 40rem; }
-.run li {
-  counter-increment: step;
+/* Running orders over a photograph */
+.photo-sec { position: relative; isolation: isolate; overflow: hidden; background: var(--photo-base); color: var(--photo-ink); }
+.photo-sec .bg { position: absolute; inset: 0; z-index: -1; }
+.photo-sec .bg img { width: 100%; height: 100%; object-fit: cover; }
+.photo-sec .bg::after { content: ""; position: absolute; inset: 0; background: var(--photo-veil); }
+.photo-inner {
+  max-width: 56rem;
+  margin-inline: auto;
+  padding-block: clamp(4rem, 11vw, 7.5rem);
+  padding-left: var(--gutter-l);
+  padding-right: var(--gutter-r);
   display: grid;
-  grid-template-columns: 2.5rem minmax(0, 1fr);
-  align-items: baseline;
-  padding-block: .9rem;
-  border-bottom: 1px solid var(--line);
-  break-inside: avoid;
+  gap: clamp(2.75rem, 7vw, 4rem);
 }
-.run li::before {
+.photo-sec .title { gap: .5rem; }
+.photo-sec .title-caps { color: var(--photo-soft); font-size: clamp(.9375rem, 3vw, 1.125rem); }
+.photo-sec .title-script { font-size: clamp(2.875rem, 11vw, 4.25rem); }
+.photo-sec .sec-note { color: var(--photo-soft); }
+
+.timeline { position: relative; counter-reset: step; display: grid; row-gap: 1.6rem; }
+.timeline::before { content: ""; position: absolute; top: .5rem; bottom: .5rem; left: 0; width: 1px; background: var(--photo-line); }
+.timeline li { counter-increment: step; position: relative; display: grid; align-content: start; gap: .15rem; padding-left: 1.75rem; }
+.timeline li::before {
   content: counter(step, decimal-leading-zero);
-  grid-row: 1 / span 2;
   font-family: var(--label);
-  font-size: .75rem;
-  letter-spacing: .08em;
-  color: var(--accent);
+  font-size: .6875rem;
+  line-height: 1.4;
+  letter-spacing: .24em;
+  color: var(--photo-soft);
   font-variant-numeric: tabular-nums;
 }
-.what, .who { grid-column: 2; }
-.what { font-size: 1.125rem; line-height: 1.4; }
-.who { color: var(--muted); font-size: .9375rem; font-style: italic; line-height: 1.4; }
-.run a.what { text-decoration-color: var(--line); text-underline-offset: .25em; text-decoration-thickness: 1px; }
-.run a.what:hover { text-decoration-color: var(--ink); }
-.run .key .what { font-family: var(--display); font-style: italic; font-size: 1.375rem; }
-.run .party .what { font-family: var(--script); font-size: clamp(1.875rem, 7vw, 2.25rem); line-height: 1.15; color: var(--accent); }
-.run.pairs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(1rem, 4vw, 2.5rem); max-width: none; }
-.run.pairs li { font-size: 1rem; line-height: 1.4; }
-.run.long { max-width: none; }
-@media (min-width: 1020px) {
-  .run.long { columns: 2; column-gap: 3rem; }
+.timeline li::after { content: ""; position: absolute; left: 0; top: .48rem; width: 1rem; height: 1px; background: var(--photo-line); }
+.timeline .what { font-family: var(--display); font-weight: 500; font-size: clamp(1.3125rem, 4.4vw, 1.5rem); line-height: 1.25; }
+.timeline .who { font-style: italic; font-size: 1rem; line-height: 1.4; color: var(--photo-soft); }
+.timeline a.what { text-decoration-color: var(--photo-line); text-decoration-thickness: 1px; text-underline-offset: .22em; }
+.timeline a.what:hover { text-decoration-color: currentColor; }
+.timeline .key .what, .timeline .party .what { font-family: var(--script); font-weight: 400; font-size: clamp(2rem, 7.4vw, 2.625rem); line-height: 1.1; }
+@media (min-width: 760px) {
+  .timeline { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-auto-rows: minmax(1.5rem, auto); row-gap: 0; }
+  .timeline::before { left: 50%; }
+  .timeline li { grid-row: span 2; padding-block: .4rem; }
+  .timeline li:nth-child(odd) { grid-column: 2; padding-left: 2.25rem; }
+  .timeline li:nth-child(even) { grid-column: 1; padding-left: 0; padding-right: 2.25rem; text-align: right; }
+  .timeline li::after { top: .88rem; width: 1.25rem; }
+  .timeline li:nth-child(even)::after { left: auto; right: 0; }
 }
 
-.ministers { display: grid; gap: 1rem; max-width: 40rem; }
-.ministers .label { color: var(--accent); }
-.ministers ul { display: grid; gap: .25rem; font-family: var(--display); font-size: 1.125rem; line-height: 1.5; }
+.ministers { display: grid; justify-items: center; gap: 1rem; padding-top: clamp(2.5rem, 6vw, 3.5rem); border-top: 1px solid var(--photo-line); text-align: center; }
+.ministers h3 { color: var(--photo-soft); }
+.ministers ul { display: grid; gap: .2rem; font-family: var(--display); font-size: 1.375rem; line-height: 1.4; }
 
 /* Hymns */
-.hymns { --hymn: 1.125rem; }
-.hymns[data-size="2"] { --hymn: 1.375rem; }
-.hymns[data-size="3"] { --hymn: 1.625rem; }
-.sizes { display: flex; align-items: center; gap: .4rem; margin-top: .5rem; flex-wrap: wrap; }
+.hymns { --hymn: 1.1875rem; background: var(--paper-2); }
+.hymns[data-size="2"] { --hymn: 1.4375rem; }
+.hymns[data-size="3"] { --hymn: 1.6875rem; }
+.hymns-inner {
+  max-width: 44rem;
+  margin-inline: auto;
+  padding-block: clamp(4rem, 11vw, 7rem);
+  padding-left: var(--gutter-l);
+  padding-right: var(--gutter-r);
+  display: grid;
+  gap: clamp(3rem, 8vw, 4.5rem);
+}
+.hymns-head { display: grid; justify-items: center; gap: 1.5rem; }
+.sizes { display: flex; align-items: center; gap: .45rem; }
 .size-label { color: var(--muted); margin-right: .4rem; }
-.sizes button { width: 2.25rem; height: 2.25rem; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--ink); font-family: var(--display); line-height: 1; cursor: pointer; }
-.sizes button:nth-of-type(1) { font-size: .875rem; }
-.sizes button:nth-of-type(2) { font-size: 1.125rem; }
-.sizes button:nth-of-type(3) { font-size: 1.375rem; }
+.sizes button { width: 2.375rem; height: 2.375rem; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--ink); font-family: var(--display); line-height: 1; cursor: pointer; }
+.sizes button:nth-of-type(1) { font-size: 1rem; }
+.sizes button:nth-of-type(2) { font-size: 1.25rem; }
+.sizes button:nth-of-type(3) { font-size: 1.5rem; }
 .sizes button[aria-pressed="true"] { border-color: var(--ink); }
-.hymn { display: grid; gap: .4rem; max-width: 36rem; }
-.hymn .label { color: var(--accent); }
-.hymn h3 { font-family: var(--display); font-weight: 400; font-style: italic; font-size: clamp(1.5rem, 4.8vw, 1.875rem); line-height: 1.25; text-wrap: balance; }
-.lyrics { margin-top: 1rem; white-space: pre-line; font-size: var(--hymn); line-height: 1.6; }
-.lyrics:empty::before { content: "Words to be added."; color: var(--muted); font-style: italic; }
-.verses { counter-reset: verse; display: grid; gap: 1.5rem; margin-top: 1rem; font-size: var(--hymn); line-height: 1.55; }
-.verses li { counter-increment: verse; position: relative; padding-left: 2rem; }
-.verses li::before { content: counter(verse); position: absolute; left: 0; top: .3em; font-family: var(--label); font-size: .75rem; color: var(--accent); font-variant-numeric: tabular-nums; }
+.hymn { display: grid; justify-items: center; gap: .5rem; text-align: center; }
+.hymn + .hymn { padding-top: clamp(3rem, 8vw, 4.5rem); border-top: 1px solid var(--line); }
+.hymn .caps { color: var(--accent); }
+.hymn h3 { font-family: var(--display); font-weight: 500; font-style: italic; font-size: clamp(1.875rem, 6.4vw, 2.375rem); line-height: 1.15; text-wrap: balance; }
+.hymn-note { font-style: italic; font-size: 1rem; color: var(--muted); }
+.lyrics { margin-top: .75rem; white-space: pre-line; font-size: var(--hymn); line-height: 1.6; }
+.lyrics:empty::before { content: "Words to be added."; font-style: italic; color: var(--muted); }
+.verses { counter-reset: verse; display: grid; gap: 2rem; margin-top: 1.25rem; font-size: var(--hymn); line-height: 1.55; }
+.verses li { counter-increment: verse; display: grid; justify-items: center; gap: .4rem; }
+.verses li::before { content: "Verse " counter(verse); font-family: var(--label); font-weight: 500; font-size: .625rem; letter-spacing: .24em; line-height: 1.5; text-transform: uppercase; color: var(--accent); }
 .verses .refrain { counter-increment: none; font-style: italic; }
-.verses .refrain::before { content: "Ref."; }
-.hymn-note { color: var(--muted); font-size: .9375rem; }
-.prose .word { font-family: var(--label); font-size: .875em; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.verses .refrain::before { content: "Refrain"; }
+
+/* Photographs */
+.plain-inner {
+  max-width: 60rem;
+  margin-inline: auto;
+  padding-block: clamp(4rem, 11vw, 7rem);
+  padding-left: var(--gutter-l);
+  padding-right: var(--gutter-r);
+  display: grid;
+  gap: clamp(2.5rem, 7vw, 4rem);
+}
+.strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(.5rem, 2vw, 1.25rem); align-items: start; }
+.strip img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; }
+@media (min-width: 700px) {
+  .strip { padding-bottom: 2.5rem; }
+  .strip img:nth-child(2) { translate: 0 2.5rem; }
+}
+.pairs { counter-reset: step; width: 100%; max-width: 46rem; margin-inline: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(1.25rem, 5vw, 3rem); }
+.pairs li { counter-increment: step; display: grid; grid-template-columns: 2rem minmax(0, 1fr); align-items: baseline; padding-block: .85rem; border-bottom: 1px solid var(--line); font-size: 1.0625rem; line-height: 1.35; }
+.pairs li::before { content: counter(step, decimal-leading-zero); font-family: var(--label); font-size: .6875rem; letter-spacing: .12em; color: var(--accent); font-variant-numeric: tabular-nums; }
 
 /* Thank you */
-.thanks-lines { display: grid; gap: .2rem; font-family: var(--display); font-size: clamp(1.25rem, 4vw, 1.5rem); line-height: 1.35; margin-block: 1rem; }
-.sign { display: grid; gap: .4rem; margin-top: .75rem; }
-.sign .label { color: var(--muted); }
-.sign-names { font-family: var(--script); font-size: clamp(2rem, 8vw, 2.75rem); line-height: 1.15; }
+.thanks-line { font-family: var(--display); font-style: italic; font-size: clamp(1.5rem, 5vw, 1.875rem); line-height: 1.3; text-align: center; text-wrap: balance; margin-block: .75rem; }
+.word { font-family: var(--label); font-weight: 500; font-size: .8125em; letter-spacing: .18em; color: var(--accent); }
+.sign { display: grid; justify-items: center; gap: .3rem; text-align: center; }
+.sign .caps { color: var(--muted); }
+.sign-names { font-family: var(--script); font-size: clamp(2.375rem, 9vw, 3.25rem); line-height: 1.15; }
 
 /* Footer */
-.foot-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 2.5rem calc(2.5rem + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--line); }
-.foot-mono { font-family: var(--script); font-size: 2.25rem; line-height: 1; }
-.foot-top { color: var(--muted); text-decoration: none; }
-.foot-top:hover { color: var(--ink); }
+.foot { background: var(--green); color: var(--on-green); }
+.foot-inner {
+  max-width: 68rem;
+  margin-inline: auto;
+  padding-block: 3.5rem calc(3rem + env(safe-area-inset-bottom, 0px));
+  padding-left: var(--gutter-l);
+  padding-right: var(--gutter-r);
+  display: grid;
+  justify-items: center;
+  gap: .9rem;
+  text-align: center;
+}
+.foot-mono { font-family: var(--script); font-size: 3rem; line-height: 1; }
+.foot-top { opacity: .8; text-decoration: none; padding-block: .4rem; }
+.foot-top:hover { opacity: 1; }
 
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
@@ -435,133 +590,165 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--accent); outlin
   <button class="intro-skip" type="button">Skip</button>
 </div>
 
-<nav class="tabs" aria-label="Sections">
+<nav class="tabs" id="nav" aria-label="Sections">
   <div class="tabs-row">
-    <div class="tabs-inner" id="tabs">
-      <a class="mono" href="#top" aria-label="Back to the invitation">A&amp;J</a>
-      <a href="#story">Our Story</a>
-      <a href="#service">Service</a>
-      <a href="#hymns">Hymns</a>
-      <a href="#photographs">Photographs</a>
-      <a href="#reception">Reception</a>
-      <a href="#thanks">Thank You</a>
+    <div class="tabs-scroll" id="tabs">
+      <div class="tabs-group">
+        <a href="#details">Details</a>
+        <a href="#story">Our Story</a>
+        <a href="#service">Service</a>
+      </div>
+      <a class="mono" href="#top" aria-label="Back to the top">A&amp;J</a>
+      <div class="tabs-group">
+        <a href="#hymns">Hymns</a>
+        <a href="#photographs">Photographs</a>
+        <a href="#reception">Reception</a>
+        <a href="#thanks">Thank You</a>
+      </div>
     </div>
     <a class="live-tab" data-live href="#top" target="_blank" rel="noopener" hidden><span class="live-dot" aria-hidden="true"></span>Live</a>
   </div>
 </nav>
 
 <header class="hero" id="top">
+  <picture class="hero-photo">
+    <source media="(min-width: 900px) and (min-aspect-ratio: 5/4)" srcset="images/hero-wide.jpg" width="1600" height="1009">
+    <img src="images/hero.jpg" width="1200" height="1744" alt="Abigail and Jerry walking hand in hand under palm trees" fetchpriority="high">
+  </picture>
   <div class="hero-inner">
-    <div class="invite">
-      <p class="invite-stack" aria-hidden="true"><span>20</span><span>11</span><span>26</span></p>
-      <p class="invite-caps">Together with<br>their families</p>
-      <div class="invite-names">
-        <span class="invite-mono" aria-hidden="true">A<span>J</span></span>
-        <h1><span>Atela Abigail</span> <i>&amp;</i> <span>Osoba Jerry</span></h1>
-      </div>
-      <p class="invite-caps">Invites you to celebrate<br>their wedding</p>
-      <div class="invite-when">
-        <p><span>Friday</span> <b>20th</b></p>
-        <p><span>Nov.</span> <b>2026</b></p>
-        <p><span>At</span> <b>10:00 AM</b></p>
-      </div>
-      <div class="heart-rule" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-8.5-5.4-10.6-10.2C.1 7.5 2.2 4 5.8 4c2.4 0 4.3 1.3 6.2 3.6C13.9 5.3 15.8 4 18.2 4c3.6 0 5.7 3.5 4.4 6.8C20.5 15.6 12 21 12 21z"/></svg>
-      </div>
-      <div class="invite-block">
-        <p class="invite-venue">The God-Life Assembly International, Jos.</p>
-        <p class="invite-address">Yingi Rayfield, Jos Plateau State</p>
-      </div>
-      <div class="invite-block">
-        <p class="invite-colour-label">Colour of the day:</p>
-        <p class="invite-colours">Sage Green, Blush Pink, Coffee Brown &amp; White.</p>
-        <ul class="swatches" aria-hidden="true"><li></li><li></li><li></li><li></li></ul>
-      </div>
-      <div class="invite-block">
-        <p class="invite-follow">Reception to follow</p>
-        <p class="invite-hall">ECWA Headquarters Conference Hall</p>
-      </div>
+    <p class="caps">Join us for the wedding of</p>
+    <h1><span>Abigail</span> <i>&amp;</i> <span>Jerry</span></h1>
+    <span class="hero-rule" aria-hidden="true"></span>
+    <div class="hero-foot">
+      <p class="caps hero-date">20 · 11 · 2026</p>
+      <a class="live-btn" data-live href="#top" target="_blank" rel="noopener" hidden><span class="live-dot" aria-hidden="true"></span>Watch live</a>
+      <p class="live-soon" id="live-soon">Live stream link coming soon</p>
     </div>
-    <a class="live-btn" data-live href="#top" target="_blank" rel="noopener" hidden><span class="live-dot" aria-hidden="true"></span>Watch live</a>
-    <p class="live-soon" id="live-soon">Live stream link coming soon</p>
   </div>
 </header>
 
 <main>
-  <section class="sec" id="story">
-    <div class="sec-inner">
-      <header class="sec-head">
-        <h2>Our Love Story</h2>
-        <p class="sec-quote">“Every love story is beautiful, but ours is our favourite.”</p>
-        <p class="sec-note">As told by the groom</p>
-      </header>
-      <div class="sec-body prose">
-        <p>Ours didn’t begin with a grand moment or a perfect plan. It began simply by meeting Solomon and Francis, who, over time, brought me into their family. I became a very good friend of the family, and before long, their home became a home away from home for me.</p>
-        <p>Days turned into months, and months into years. Through friendship, faith, laughter and unwavering support, our bond kept growing stronger. I was simply enjoying the friendship, until somewhere along the journey, Abigail and I became close friends.</p>
-        <p>We became woven into each other’s everyday lives. We laughed, had long gist-filled calls, shared the details of our days, our challenges, our laughter, our dreams and everything in between.</p>
-        <p>Over time, we became each other’s safe place, offering support, wisdom, presence and consistency through both the big moments and the ordinary ones.</p>
-        <p>What started as friendship slowly grew into a deeper connection. We talked, understood each other, got to know each other more, and somewhere along the way, we discovered something beautiful in one another.</p>
-        <p class="turn">Friendship had quietly become love.</p>
-        <p>And when that realization came, I knew I had to tell her family. Honestly, that was one of my biggest challenges.</p>
-        <p>I had so many thoughts and fears. How do I tell my friends, “O boy, I like your sister ooo, and I want to have a relationship with her”?</p>
-        <p class="speech">“Ah! You want to break BRO CODE?”</p>
-        <p class="speech">Or, “Mummy, I like your daughter.” Hmmmmm.</p>
-        <p>I didn’t want to lose the beautiful friendship and relationship I had built with the family in the process. I had so much love and respect for them, and the thought of anything changing because of my intentions was a genuine fear.</p>
-        <p>But eventually, I summoned the courage and spoke to the family about my intentions.</p>
-        <p>And surprisingly, they accepted me with open hearts and gave me their blessings. In fact, they were happy.</p>
-        <p>From there, everything began to fall into place.</p>
-        <p class="turn">The journey began.</p>
-        <p>Abigail became more than someone I loved. She became someone I could see myself doing life with, someone whose presence brought a different kind of peace, purpose and joy.</p>
-        <p>Our journey hasn’t been without its challenges, but every season has taught us something about love, patience, forgiveness, faith and, most importantly, choosing each other.</p>
-        <p>And perhaps the most beautiful part of our story is knowing that this isn’t the end of it. It is only the beginning of a new chapter.</p>
-        <p>A meeting was held. Questions were asked. Families were visited. Traditions were honoured. There was a proposal, a joyful send-forth, the dowry rites, and now, here we are.</p>
-        <p>From two people who found each other, to two families becoming one, this is the beautiful journey that has brought us here today.</p>
-        <p class="turn">This is our story and by God’s grace, the best chapters are still ahead.</p>
+  <section class="dateband" aria-label="Date and place">
+    <p class="big-date">November 20, 2026</p>
+    <p class="caps">Friday · Jos, Plateau State</p>
+  </section>
+
+  <section class="split flip" id="details">
+    <div class="split-inner">
+      <figure class="framed top-right">
+        <img src="images/jos.jpg" width="900" height="1207" alt="Abigail and Jerry in tall grass with the hills of Jos behind them" loading="lazy" decoding="async">
+      </figure>
+      <div class="split-text">
+        <header class="title">
+          <p class="title-caps">Where it all happens</p>
+          <h2 class="title-script">Jos, Plateau State</h2>
+        </header>
+        <p class="lead">Together with their families, <b>Atela Abigail</b> &amp; <b>Osoba Jerry</b> invite you to celebrate their wedding.</p>
+        <dl class="facts">
+          <div>
+            <dt class="caps">The Ceremony</dt>
+            <dd>Friday, 20th November 2026, at 10:00 AM</dd>
+            <dd class="place">The God-Life Assembly International</dd>
+            <dd>Yingi Rayfield, Jos, Plateau State</dd>
+          </div>
+          <div>
+            <dt class="caps">The Reception</dt>
+            <dd>To follow at</dd>
+            <dd class="place">ECWA Headquarters Conference Hall</dd>
+          </div>
+          <div>
+            <dt class="caps">Colour of the Day</dt>
+            <dd>Sage Green, Blush Pink, Coffee Brown &amp; White</dd>
+            <dd><ul class="swatches" aria-hidden="true"><li></li><li></li><li></li><li></li></ul></dd>
+          </div>
+        </dl>
       </div>
     </div>
   </section>
 
-  <section class="sec" id="service">
-    <div class="sec-inner">
-      <header class="sec-head">
-        <h2>Order of Service</h2>
-        <p class="sec-note">10:00 AM at The God-Life Assembly International, Yingi Rayfield, Jos</p>
-      </header>
-      <div class="sec-body">
-        <ol class="run">
-          <li><span class="what">Interlude (Worship)</span></li>
-          <li><span class="what">Opening Prayer</span></li>
-          <li><a class="what" href="#procession">Bridal Processional</a><span class="who">Jesus, You’re Beautiful</span></li>
-          <li><span class="what">Welcome of Guests</span><span class="who">Reason why we are here</span></li>
-          <li><span class="what">Special Ministration</span></li>
-          <li><span class="what">Poem Presentation</span><span class="who">Dr. Hassan (Jets)</span></li>
-          <li><a class="what" href="#hymn-1">Hymn</a><span class="who">Praise to the Lord, the Almighty</span></li>
-          <li class="key"><span class="what">Marriage Solemnization</span></li>
-          <li><span class="what">Signing of Marriage Register</span></li>
-          <li><span class="what">Presentation of the New Couple</span><span class="who">Certificate/gifts (Bible)</span></li>
-          <li><span class="what">Closing Prayer / Announcements</span></li>
-          <li><a class="what" href="#hymn-2">Recessional Hymn</a><span class="who">Count Your Blessings</span></li>
-        </ol>
-        <div class="ministers">
-          <h3 class="label">Officiating Ministers</h3>
-          <ul>
-            <li>Ven. Prof. Ishmael Ogboru</li>
-            <li>Prof. Likita Ogba</li>
-            <li>Dr. Lucius Imoh</li>
-            <li>Prof. Timothy Oyetunde</li>
-            <li>Rev. Ishaku Yaro</li>
-            <li>Rev. Niven Y. Mshelia</li>
-            <li>Rev. Ayuba Vandi</li>
-          </ul>
+  <section class="split long" id="story">
+    <div class="split-inner">
+      <figure class="framed">
+        <img src="images/journey.jpg" width="900" height="1189" alt="Jerry carrying Abigail, both of them laughing" loading="lazy" decoding="async">
+      </figure>
+      <div class="split-text">
+        <header class="title">
+          <p class="title-caps">Abigail &amp; Jerry</p>
+          <h2 class="title-script">Our Love Story</h2>
+        </header>
+        <p class="quote">“Every love story is beautiful, but ours is our favourite.”</p>
+        <p class="caps byline">As told by the groom</p>
+        <div class="prose">
+          <p>Ours didn’t begin with a grand moment or a perfect plan. It began simply by meeting Solomon and Francis, who, over time, brought me into their family. I became a very good friend of the family, and before long, their home became a home away from home for me.</p>
+          <p>Days turned into months, and months into years. Through friendship, faith, laughter and unwavering support, our bond kept growing stronger. I was simply enjoying the friendship, until somewhere along the journey, Abigail and I became close friends.</p>
+          <p>We became woven into each other’s everyday lives. We laughed, had long gist-filled calls, shared the details of our days, our challenges, our laughter, our dreams and everything in between.</p>
+          <p>Over time, we became each other’s safe place, offering support, wisdom, presence and consistency through both the big moments and the ordinary ones.</p>
+          <p>What started as friendship slowly grew into a deeper connection. We talked, understood each other, got to know each other more, and somewhere along the way, we discovered something beautiful in one another.</p>
+          <p class="turn">Friendship had quietly become love.</p>
+          <p>And when that realization came, I knew I had to tell her family. Honestly, that was one of my biggest challenges.</p>
+          <p>I had so many thoughts and fears. How do I tell my friends, “O boy, I like your sister ooo, and I want to have a relationship with her”?</p>
+          <p class="speech">“Ah! You want to break BRO CODE?”</p>
+          <p class="speech">Or, “Mummy, I like your daughter.” Hmmmmm.</p>
+          <p>I didn’t want to lose the beautiful friendship and relationship I had built with the family in the process. I had so much love and respect for them, and the thought of anything changing because of my intentions was a genuine fear.</p>
+          <p>But eventually, I summoned the courage and spoke to the family about my intentions.</p>
+          <p>And surprisingly, they accepted me with open hearts and gave me their blessings. In fact, they were happy.</p>
+          <p>From there, everything began to fall into place.</p>
+          <p class="turn">The journey began.</p>
+          <p>Abigail became more than someone I loved. She became someone I could see myself doing life with, someone whose presence brought a different kind of peace, purpose and joy.</p>
+          <p>Our journey hasn’t been without its challenges, but every season has taught us something about love, patience, forgiveness, faith and, most importantly, choosing each other.</p>
+          <p>And perhaps the most beautiful part of our story is knowing that this isn’t the end of it. It is only the beginning of a new chapter.</p>
+          <p>A meeting was held. Questions were asked. Families were visited. Traditions were honoured. There was a proposal, a joyful send-forth, the dowry rites, and now, here we are.</p>
+          <p>From two people who found each other, to two families becoming one, this is the beautiful journey that has brought us here today.</p>
+          <p class="turn">This is our story and by God’s grace, the best chapters are still ahead.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="sec hymns" id="hymns">
-    <div class="sec-inner">
-      <header class="sec-head">
-        <h2>Hymns</h2>
+  <section class="photo-sec" id="service">
+    <div class="bg"><img src="images/service.jpg" width="1400" height="1805" alt="" loading="lazy" decoding="async"></div>
+    <div class="photo-inner">
+      <header class="title">
+        <p class="title-caps">The Ceremony</p>
+        <h2 class="title-script">Order of Service</h2>
+        <p class="sec-note">10:00 AM at The God-Life Assembly International, Yingi Rayfield, Jos</p>
+      </header>
+      <ol class="timeline">
+        <li><span class="what">Interlude (Worship)</span></li>
+        <li><span class="what">Opening Prayer</span></li>
+        <li><a class="what" href="#procession">Bridal Processional</a><span class="who">Jesus, You’re Beautiful</span></li>
+        <li><span class="what">Welcome of Guests</span><span class="who">Reason why we are here</span></li>
+        <li><span class="what">Special Ministration</span></li>
+        <li><span class="what">Poem Presentation</span><span class="who">Dr. Hassan (Jets)</span></li>
+        <li><a class="what" href="#hymn-1">Hymn</a><span class="who">Praise to the Lord, the Almighty</span></li>
+        <li class="key"><span class="what">Marriage Solemnization</span></li>
+        <li><span class="what">Signing of Marriage Register</span></li>
+        <li><span class="what">Presentation of the New Couple</span><span class="who">Certificate/gifts (Bible)</span></li>
+        <li><span class="what">Closing Prayer / Announcements</span></li>
+        <li><a class="what" href="#hymn-2">Recessional Hymn</a><span class="who">Count Your Blessings</span></li>
+      </ol>
+      <div class="ministers">
+        <h3 class="caps">Officiating Ministers</h3>
+        <ul>
+          <li>Ven. Prof. Ishmael Ogboru</li>
+          <li>Prof. Likita Ogba</li>
+          <li>Dr. Lucius Imoh</li>
+          <li>Prof. Timothy Oyetunde</li>
+          <li>Rev. Ishaku Yaro</li>
+          <li>Rev. Niven Y. Mshelia</li>
+          <li>Rev. Ayuba Vandi</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="hymns" id="hymns">
+    <div class="hymns-inner">
+      <header class="hymns-head">
+        <div class="title">
+          <p class="title-caps">Sing with us</p>
+          <h2 class="title-script">Hymns</h2>
+        </div>
         <div class="sizes" role="group" aria-label="Hymn text size">
           <span class="size-label">Text size</span>
           <button type="button" id="size-1" data-size="1" aria-label="Normal text" aria-pressed="true">A</button>
@@ -569,114 +756,120 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--accent); outlin
           <button type="button" id="size-3" data-size="3" aria-label="Largest text" aria-pressed="false">A</button>
         </div>
       </header>
-      <div class="sec-body">
-        <article class="hymn" id="procession">
-          <p class="label">Bridal Procession</p>
-          <h3>Jesus, You’re Beautiful</h3>
-          <!-- PROCESSION SONG WORDS: paste the words between the two tags on the next line. Line breaks are kept. -->
-          <div class="lyrics" id="procession-lyrics"></div>
-        </article>
-        <article class="hymn" id="hymn-1">
-          <p class="label">Hymn 1</p>
-          <h3>Praise to the Lord, the Almighty</h3>
-          <ol class="verses">
-            <li>Praise to the Lord, the Almighty,<br>the King of creation!<br>O my soul, praise Him, for He is thy<br>health and salvation!<br>All ye who hear,<br>Now to His temple draw near;<br>Sing now in glad adoration!</li>
-            <li>Praise to the Lord, who o’er all<br>things so wondrously reigneth,<br>Who, as on wings of an eagle,<br>uplifteth, sustaineth.<br>Hast thou not seen<br>How thy desires all have been<br>Granted in what He ordaineth?</li>
-            <li>Praise to the Lord, who hath fearfully,<br>wondrously, made thee!<br>Health hath vouchsafed and, when<br>heedlessly falling, hath stayed thee.<br>What need or grief<br>Ever hath failed of relief?<br>Wings of His mercy did shade thee.</li>
-            <li>Praise to the Lord, who doth prosper<br>thy work and defend thee,<br>Who from the heavens the streams of<br>His mercy doth send thee.<br>Ponder anew<br>What the Almighty can do,<br>Who with His love doth befriend thee.</li>
-            <li>Praise to the Lord! Oh, let all that<br>is in me adore Him!<br>All that hath life and breath, come<br>now with praises before Him!<br>Let the Amen<br>Sound from His people again;<br>Gladly for aye we adore Him.</li>
-          </ol>
-        </article>
-        <article class="hymn" id="hymn-2">
-          <p class="label">Hymn 2</p>
-          <h3>Count Your Blessings</h3>
-          <p class="hymn-note">Sing the refrain after each verse.</p>
-          <ol class="verses">
-            <li>When upon life’s billows you are tempest tossed,<br>When you are discouraged, thinking all is lost,<br>Count your many blessings, name them one by one,<br>And it will surprise you what the Lord hath done.</li>
-            <li class="refrain">Count your blessings, name them one by one;<br>Count your blessings, see what God hath done;<br>Count your blessings, name them one by one,<br>And it will surprise you what the Lord hath done.</li>
-            <li>Are you ever burdened with a load of care?<br>Does the cross seem heavy you are called to bear?<br>Count your many blessings, every doubt will fly,<br>And you will be singing as the days go by.</li>
-            <li>When you look at others with their lands and gold,<br>Think that Christ has promised you His wealth untold.<br>Count your many blessings, money cannot buy<br>Your reward in heaven, nor your Lord on high.</li>
-            <li>So amid the conflict, whether great or small,<br>Do not be discouraged, God is over all;<br>Count your many blessings, angels will attend,<br>Help and comfort give you to your journey’s end.</li>
-          </ol>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="photographs">
-    <div class="sec-inner">
-      <header class="sec-head">
-        <h2>Order of Photographs</h2>
-      </header>
-      <div class="sec-body">
-        <ol class="run pairs">
-          <li>Couple with officiating ministers</li>
-          <li>Couple only</li>
-          <li>Couple with both parents</li>
-          <li>Groom’s parents</li>
-          <li>Bride’s parents</li>
-          <li>Groom’s siblings</li>
-          <li>Bride’s siblings</li>
-          <li>Groom’s family</li>
-          <li>Bride’s family</li>
-          <li>Special Guest of Honour</li>
-          <li>Friends</li>
-          <li>Groom’s colleagues</li>
-          <li>Bride’s colleagues</li>
-          <li>Well-wishers</li>
+      <article class="hymn" id="procession">
+        <p class="caps">Bridal Procession</p>
+        <h3>Jesus, You’re Beautiful</h3>
+        <!-- PROCESSION SONG WORDS: paste the words between the two tags on the next line. Line breaks are kept. -->
+        <div class="lyrics" id="procession-lyrics"></div>
+      </article>
+      <article class="hymn" id="hymn-1">
+        <p class="caps">Hymn 1</p>
+        <h3>Praise to the Lord, the Almighty</h3>
+        <ol class="verses">
+          <li><p>Praise to the Lord, the Almighty,<br>the King of creation!<br>O my soul, praise Him, for He is thy<br>health and salvation!<br>All ye who hear,<br>Now to His temple draw near;<br>Sing now in glad adoration!</p></li>
+          <li><p>Praise to the Lord, who o’er all<br>things so wondrously reigneth,<br>Who, as on wings of an eagle,<br>uplifteth, sustaineth.<br>Hast thou not seen<br>How thy desires all have been<br>Granted in what He ordaineth?</p></li>
+          <li><p>Praise to the Lord, who hath fearfully,<br>wondrously, made thee!<br>Health hath vouchsafed and, when<br>heedlessly falling, hath stayed thee.<br>What need or grief<br>Ever hath failed of relief?<br>Wings of His mercy did shade thee.</p></li>
+          <li><p>Praise to the Lord, who doth prosper<br>thy work and defend thee,<br>Who from the heavens the streams of<br>His mercy doth send thee.<br>Ponder anew<br>What the Almighty can do,<br>Who with His love doth befriend thee.</p></li>
+          <li><p>Praise to the Lord! Oh, let all that<br>is in me adore Him!<br>All that hath life and breath, come<br>now with praises before Him!<br>Let the Amen<br>Sound from His people again;<br>Gladly for aye we adore Him.</p></li>
         </ol>
-      </div>
+      </article>
+      <article class="hymn" id="hymn-2">
+        <p class="caps">Hymn 2</p>
+        <h3>Count Your Blessings</h3>
+        <p class="hymn-note">Sing the refrain after each verse.</p>
+        <ol class="verses">
+          <li><p>When upon life’s billows you are tempest tossed,<br>When you are discouraged, thinking all is lost,<br>Count your many blessings, name them one by one,<br>And it will surprise you what the Lord hath done.</p></li>
+          <li class="refrain"><p>Count your blessings, name them one by one;<br>Count your blessings, see what God hath done;<br>Count your blessings, name them one by one,<br>And it will surprise you what the Lord hath done.</p></li>
+          <li><p>Are you ever burdened with a load of care?<br>Does the cross seem heavy you are called to bear?<br>Count your many blessings, every doubt will fly,<br>And you will be singing as the days go by.</p></li>
+          <li><p>When you look at others with their lands and gold,<br>Think that Christ has promised you His wealth untold.<br>Count your many blessings, money cannot buy<br>Your reward in heaven, nor your Lord on high.</p></li>
+          <li><p>So amid the conflict, whether great or small,<br>Do not be discouraged, God is over all;<br>Count your many blessings, angels will attend,<br>Help and comfort give you to your journey’s end.</p></li>
+        </ol>
+      </article>
     </div>
   </section>
 
-  <section class="sec" id="reception">
-    <div class="sec-inner">
-      <header class="sec-head">
-        <h2>Order of Reception</h2>
+  <section id="photographs">
+    <div class="plain-inner">
+      <header class="title">
+        <p class="title-caps">After the ceremony</p>
+        <h2 class="title-script">Order of Photographs</h2>
+      </header>
+      <div class="strip">
+        <img src="images/moment-1.jpg" width="720" height="980" alt="Abigail and Jerry seated together, smiling" loading="lazy" decoding="async">
+        <img src="images/moment-2.jpg" width="720" height="984" alt="A black-and-white portrait of Abigail and Jerry" loading="lazy" decoding="async">
+        <img src="images/moment-3.jpg" width="720" height="1012" alt="Abigail and Jerry in a close embrace under palm trees" loading="lazy" decoding="async">
+      </div>
+      <ol class="pairs">
+        <li>Couple with officiating ministers</li>
+        <li>Couple only</li>
+        <li>Couple with both parents</li>
+        <li>Groom’s parents</li>
+        <li>Bride’s parents</li>
+        <li>Groom’s siblings</li>
+        <li>Bride’s siblings</li>
+        <li>Groom’s family</li>
+        <li>Bride’s family</li>
+        <li>Special Guest of Honour</li>
+        <li>Friends</li>
+        <li>Groom’s colleagues</li>
+        <li>Bride’s colleagues</li>
+        <li>Well-wishers</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="photo-sec" id="reception">
+    <div class="bg"><img src="images/reception.jpg" width="1400" height="1899" alt="" loading="lazy" decoding="async"></div>
+    <div class="photo-inner">
+      <header class="title">
+        <p class="title-caps">The Reception</p>
+        <h2 class="title-script">Order of Reception</h2>
         <p class="sec-note">ECWA Headquarters Conference Hall<br>Duration: 3 hours 30 minutes maximum</p>
       </header>
-      <div class="sec-body">
-        <ol class="run long">
-          <li><span class="what">Arrival and Seating of Guests</span></li>
-          <li><span class="what">Introduction of Dignitaries</span></li>
-          <li><span class="what">Grand Entrance of Parents</span></li>
-          <li><span class="what">Entrance of Bridal Train and Groomsmen</span></li>
-          <li><span class="what">Grand Entrance of the Couple</span></li>
-          <li><span class="what">Opening Prayer</span></li>
-          <li><span class="what">Chairman’s Opening Remarks</span></li>
-          <li><span class="what">Couple’s First Dance</span></li>
-          <li><span class="what">Cake Cutting Ceremony</span></li>
-          <li><span class="what">Toast to the Couple</span></li>
-          <li><span class="what">Special Musical Performances</span><span class="who">Atela · Eazy · Fali Pona</span></li>
-          <li><span class="what">Couple’s Dance with Parents</span></li>
-          <li><span class="what">Groom’s Family Dance</span></li>
-          <li><span class="what">Bride’s Family Dance</span></li>
-          <li><span class="what">Presentation of Gifts</span></li>
-          <li><span class="what">Closing Remarks</span></li>
-          <li><span class="what">Vote of Thanks</span></li>
-          <li><span class="what">Closing Prayer</span></li>
-          <li class="party"><span class="what">Open Dance Floor / Party Time</span></li>
-        </ol>
-      </div>
+      <ol class="timeline">
+        <li><span class="what">Arrival and Seating of Guests</span></li>
+        <li><span class="what">Introduction of Dignitaries</span></li>
+        <li><span class="what">Grand Entrance of Parents</span></li>
+        <li><span class="what">Entrance of Bridal Train and Groomsmen</span></li>
+        <li><span class="what">Grand Entrance of the Couple</span></li>
+        <li><span class="what">Opening Prayer</span></li>
+        <li><span class="what">Chairman’s Opening Remarks</span></li>
+        <li><span class="what">Couple’s First Dance</span></li>
+        <li><span class="what">Cake Cutting Ceremony</span></li>
+        <li><span class="what">Toast to the Couple</span></li>
+        <li><span class="what">Special Musical Performances</span><span class="who">Atela · Eazy · Fali Pona</span></li>
+        <li><span class="what">Couple’s Dance with Parents</span></li>
+        <li><span class="what">Groom’s Family Dance</span></li>
+        <li><span class="what">Bride’s Family Dance</span></li>
+        <li><span class="what">Presentation of Gifts</span></li>
+        <li><span class="what">Closing Remarks</span></li>
+        <li><span class="what">Vote of Thanks</span></li>
+        <li><span class="what">Closing Prayer</span></li>
+        <li class="party"><span class="what">Open Dance Floor / Party Time</span></li>
+      </ol>
     </div>
   </section>
 
-  <section class="sec" id="thanks">
-    <div class="sec-inner">
-      <header class="sec-head">
-        <h2>With Grateful Hearts</h2>
-      </header>
-      <div class="sec-body prose">
-        <p>When we think of this journey and the many people God has used to bless, support, and encourage us, one word comes to mind: <span class="word">Gratitude</span>.</p>
-        <p>We are deeply thankful for the love that has surrounded us, the prayers that have upheld us, and the kindness that has met us at every stage of this journey. Sharing this day with you means more to us than we can fully express.</p>
-        <p>To our parents and families, thank you for loving, guiding, praying, and standing with us so faithfully. To our friends, mentors, and loved ones, thank you for your encouragement, your generosity, and the many ways you have shown up for us.</p>
-        <p>Every call, every message, every prayer, every gift, and every act of support has been a reminder to us that we are deeply loved, and for that, we appreciate you.</p>
-        <p>As we step into married life, we do so carrying the love, lessons, and blessings of the incredible people God has placed around us. We pray that the same joy you have shared with us today will return to you in abundance in Jesus name.</p>
-        <div class="thanks-lines">
-          <p>Thank you for being here and sharing this moment of our journey with us.</p>
+  <section class="split long" id="thanks">
+    <div class="split-inner">
+      <figure class="framed">
+        <img src="images/thanks.jpg" width="900" height="1350" alt="Abigail and Jerry walking away together along a garden path" loading="lazy" decoding="async">
+      </figure>
+      <div class="split-text">
+        <header class="title">
+          <p class="title-caps">With grateful hearts</p>
+          <h2 class="title-script">Thank You</h2>
+        </header>
+        <div class="prose">
+          <p>When we think of this journey and the many people God has used to bless, support, and encourage us, one word comes to mind: <span class="word">GRATITUDE</span>.</p>
+          <p>We are deeply thankful for the love that has surrounded us, the prayers that have upheld us, and the kindness that has met us at every stage of this journey. Sharing this day with you means more to us than we can fully express.</p>
+          <p>To our parents and families, thank you for loving, guiding, praying, and standing with us so faithfully. To our friends, mentors, and loved ones, thank you for your encouragement, your generosity, and the many ways you have shown up for us.</p>
+          <p>Every call, every message, every prayer, every gift, and every act of support has been a reminder to us that we are deeply loved, and for that, we appreciate you.</p>
+          <p>As we step into married life, we do so carrying the love, lessons, and blessings of the incredible people God has placed around us. We pray that the same joy you have shared with us today will return to you in abundance in Jesus name.</p>
+          <p class="thanks-line">Thank you for being here and sharing this moment of our journey with us.</p>
         </div>
         <div class="sign">
-          <p class="label">With love</p>
+          <p class="caps">With love</p>
           <p class="sign-names">Mr &amp; Mrs Ayochukwu</p>
         </div>
       </div>
@@ -684,10 +877,11 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--accent); outlin
   </section>
 </main>
 
-<footer>
+<footer class="foot">
   <div class="foot-inner">
-    <span class="foot-mono" aria-hidden="true">A&amp;J</span>
-    <a class="foot-top" href="#top">Back to top</a>
+    <p class="foot-mono" aria-hidden="true">A&amp;J</p>
+    <p class="caps">20 · 11 · 2026 · Jos</p>
+    <a class="caps foot-top" href="#top">Back to top</a>
   </div>
 </footer>
 
@@ -717,15 +911,26 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--accent); outlin
     document.getElementById('live-soon').hidden = true;
   }
 
-  // Highlight the section being read, and keep its tab visible on narrow screens.
+  var nav = document.getElementById('nav');
+  var hero = document.getElementById('top');
   var bar = document.getElementById('tabs');
-  var links = Array.prototype.slice.call(bar.querySelectorAll('a:not(.mono)'));
+  var links = Array.prototype.slice.call(bar.querySelectorAll('.tabs-group a'));
+
   function setCurrent(link) {
     links.forEach(function (a) { a.removeAttribute('aria-current'); });
-    bar.scrollTo({ left: link ? link.offsetLeft - bar.offsetLeft - 16 : 0, behavior: 'smooth' });
+    if (bar.scrollWidth > bar.clientWidth) {
+      bar.scrollTo({ left: link ? link.offsetLeft - bar.offsetLeft - 16 : 0, behavior: 'smooth' });
+    }
     if (link) link.setAttribute('aria-current', 'true');
   }
+
   if ('IntersectionObserver' in window) {
+    // The bar turns solid once the opening photo has scrolled under it.
+    new IntersectionObserver(function (entries) {
+      nav.classList.toggle('is-solid', !entries[0].isIntersecting);
+    }, { rootMargin: '-64px 0px 0px 0px' }).observe(hero);
+
+    // Highlight the section being read, and keep its link visible on narrow screens.
     var spy = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) return;
@@ -737,7 +942,9 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--accent); outlin
     links.forEach(function (a) {
       spy.observe(document.querySelector(a.getAttribute('href')));
     });
-    spy.observe(document.getElementById('top'));
+    spy.observe(hero);
+  } else {
+    nav.classList.add('is-solid');
   }
 
   // Hymn text size, remembered on this device.
